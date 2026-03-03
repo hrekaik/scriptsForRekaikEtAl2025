@@ -1,0 +1,327 @@
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+trying URL 'https://ftp.ensembl.org/pub/release-86/gtf/mus_musculus/Mus_musculus.GRCm38.86.gtf.gz'
+Content type 'application/x-gzip' length 29068684 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://ftp.ensembl.org/pub/release-89/gtf/mus_musculus/Mus_musculus.GRCm38.89.gtf.gz'
+Content type 'application/x-gzip' length 27803525 bytes (26.5 MB)
+==================================================
+downloaded 26.5 MB
+
+‘SeuratObject’ was built under R 4.4.0 but the current version is
+4.4.1; it is recomended that you reinstall ‘SeuratObject’ as the ABI
+for R may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E6.5.rds'
+Content type 'unknown' length 113642385 bytes (108.4 MB)
+==================================================
+downloaded 108.4 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E6.75.rds'
+Content type 'unknown' length 25705115 bytes (24.5 MB)
+==================================================
+downloaded 24.5 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E7.0.rds'
+Content type 'unknown' length 223655162 bytes (213.3 MB)
+==================================================
+downloaded 213.3 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E7.25.rds'
+Content type 'unknown' length 192728457 bytes (183.8 MB)
+==================================================
+downloaded 183.8 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E7.5.rds'
+Content type 'unknown' length 174046875 bytes (166.0 MB)
+==================================================
+downloaded 166.0 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E7.75.rds'
+Content type 'unknown' length 235178552 bytes (224.3 MB)
+==================================================
+downloaded 224.3 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E8.rds'
+Content type 'unknown' length 247580745 bytes (236.1 MB)
+==================================================
+downloaded 236.1 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E8.25.rds'
+Content type 'unknown' length 243603624 bytes (232.3 MB)
+==================================================
+downloaded 232.3 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E8.5a.rds'
+Content type 'unknown' length 263283487 bytes (251.1 MB)
+==================================================
+downloaded 251.1 MB
+
+trying URL 'https://shendure-web.gs.washington.edu/content/members/cxqiu/public/nobackup/tome_summary_data/mm/seurat_object_E9.5.rds'
+Content type 'unknown' length 522850280 bytes (498.6 MB)
+==================================================
+downloaded 498.6 MB
+
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Splitting ‘counts’, ‘data’ layers. Not splitting ‘scale.data.2’, ‘scale.data’. If you would like to split other layers, set in `layers` argument.
+Normalizing layer: counts.TOME_Mohammed
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.TOME_Cheng
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.TOME_Pijuan-Sala
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.TOME_E9.5
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts.our
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.TOME_Mohammed
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.TOME_Cheng
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.TOME_Pijuan-Sala
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.TOME_E9.5
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts.our
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |=======================                                               |  33%  |                                                                              |===============================================                       |  67%  |                                                                              |======================================================================| 100%
+Warning: Different features in new layer data than already exists for scale.data
+Warning: Different cells in new layer data than already exists for scale.data
+PC_ 1 
+Positive:  Apoe, Apoa1, Ttr, Apom, Amn, Fth1, Ctsh, Rbp4, Folr1, Lgmn 
+	   2610528J11Rik, Tmem37, Cd63, Cotl1, Ctsz, Apoa4, Pla2g12b, Aprt, Atp6v0b, Ctsb 
+	   Ftl1, Snx3, Gcsh, Apob, Cubn, Car7, Glrx, Lgals2, Spink1, Npl 
+Negative:  Pbx1, Tcf12, Prtg, Meis2, Efna5, Cdh2, Hmga2, Foxp1, Dach1, Tenm4 
+	   Meis1, Mllt3, Grb10, Aff3, Cadm1, Igdcc3, Zfp608, Dlg1, Zeb2, Ccdc88a 
+	   Fbn2, Fat3, Prkg1, C530008M17Rik, Lpp, Pdzrn3, Sox11, Stox2, Tmem132c, Foxp2 
+PC_ 2 
+Positive:  Efna5, Tcf12, Pbx1, Dach1, Aff3, Dlg1, Meis1, Prkg1, Lpp, Grb10 
+	   Cubn, Amn, Zfp608, Apoa4, Ctsh, Pla2g12b, Dab2, St6galnac3, Mllt3, Apom 
+	   Meis2, Foxp2, Apob, Foxp1, Fat3, Tenm4, Car7, Aldob, Pdzrn3, Lgals2 
+Negative:  Tmsb10, Eno1, Pfn1, Prdx1, Ifitm2, Fabp5, Rpl35, Slc25a5, Eif4ebp1, Pclaf 
+	   Nhp2, Eif2s2, Eef2, Ftl1, Snrpn, Tuba1a, Prps1, Fam162a, mt-Nd1, Myl6 
+	   Slc16a3, mt-Co1, Ldhb, Tubb4b, Ccnb1, Srm, Gpx1, Tceal8, mt-Cytb, Pou5f1 
+PC_ 3 
+Positive:  Tceal8, Cd24a, Ifitm2, Pclaf, Gpc3, Bex4, Serpinh1, Tuba1a, Ifitm1, Id3 
+	   Sox4, Ccnd1, Oat, Car14, Ccnd2, Macroh2a2, Mogat2, Ddt, Ddah2, Crabp1 
+	   Gja1, Gsta4, mt-Cytb, Cited2, Actb, Marcks, Myl6, Btbd2, mt-Nd4, Crabp2 
+Negative:  Elf5, Fabp3, Tex19.1, Gjb3, Cldn3, Perp, Gm9, Zfp42, Sfn, Dppa4 
+	   Htra1, S100a6, Nr0b1, Gjb5, Tfap2c, Dnmt3l, Nup62cl, Cldn4, Trap1a, Gsto1 
+	   Duoxa2, Bmp8b, Rhox5, Wnt7b, Ddah1, Plet1, Tinagl1, Morc4, Gtsf1l, Rnf128 
+PC_ 4 
+Positive:  Pim2, Pou5f1, Dnmt3b, Slc7a3, Epcam, Chchd10, Fgf5, Utf1, Gng3, Mkrn1 
+	   Pmaip1, Trh, Dppa5a, Tdgf1, Ldhb, Rab25, L1td1, Socs2, Eras, Otx2 
+	   Pou3f1, Ina, Stx3, Spint2, Nefl, Cldn7, Gstt2, Nanog, Tpd52, Rasgrp2 
+Negative:  Cnn2, Acta2, Pmp22, Vim, Csrp2, Serpinh1, Mest, Cryab, Anxa2, Tagln 
+	   Cdkn1c, Hand1, Krt8, Tpm1, Cald1, H19, Tmsb4x, Dok4, Tnni1, Foxf1 
+	   Cmtm7, Rgs5, Dlk1, Spin2c, Anxa5, Myl9, Ecscr, Tnnt2, S100a10, Tmem88 
+PC_ 5 
+Positive:  Ldhb, Epcam, Pou5f1, Tuba1a, Igfbp2, Dnmt3b, Meg3, Tgif1, Spint2, Rbp1 
+	   Slc9a3r1, Pim2, Ccnd1, Rbpms2, Emb, Basp1, Sox4, Car14, Wfdc2, Fgf8 
+	   Bcat1, Id3, Snrpn, Cldn6, Plp2, Mkrn1, Gja1, Gnai2, Sox11, Fst 
+Negative:  Hbb-bh1, Hba-a1, Hba-x, Gypa, Snca, Gata1, Slc38a5, Blvrb, Tspan32, Hbb-y 
+	   Ube2l6, Mrap, Epor, Tal1, Gypc, Cpox, Acp5, Lmo2, Gfi1b, Slc39a8 
+	   Hmbs, Fam210b, Creg1, Lyl1, Car2, Kcnn4, Ncf4, Fech, Alad, Slc25a37 
+Finding all pairwise anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 765 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 785 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 3663 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 764 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 3411 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 38896 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 765 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 2964 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 36751 anchors
+Running CCA
+Merging objects
+Finding neighborhoods
+Finding anchors
+	Found 31727 anchors
+Merging dataset 1 into 3
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Merging dataset 2 into 3 1
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Merging dataset 4 into 3 1 2
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Merging dataset 5 into 3 1 2 4
+Extracting anchors for merged samples
+Finding integration vectors
+Finding integration vector weights
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Integrating data
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+09:06:37 UMAP embedding parameters a = 0.9922 b = 1.112
+09:06:37 Read 145030 rows and found 30 numeric columns
+09:06:37 Using Annoy for neighbor search, n_neighbors = 30
+09:06:37 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+09:06:53 Writing NN index file to temp file /tmp/Rtmp9B2Sgh/file354ecd6af9122e
+09:06:53 Searching Annoy index using 1 thread, search_k = 3000
+09:07:52 Annoy recall = 100%
+09:07:52 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+09:07:55 Initializing from normalized Laplacian + noise (using RSpectra)
+09:08:08 Commencing optimization for 200 epochs, with 6739634 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+09:09:14 Optimization finished
+Rasterizing points since number of points exceeds 100,000.
+To disable this behavior set `raster=FALSE`
+Rasterizing points since number of points exceeds 100,000.
+To disable this behavior set `raster=FALSE`
+Rasterizing points since number of points exceeds 100,000.
+To disable this behavior set `raster=FALSE`

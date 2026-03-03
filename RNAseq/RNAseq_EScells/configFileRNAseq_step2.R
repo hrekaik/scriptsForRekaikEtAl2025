@@ -1,0 +1,23 @@
+gitHubDir <- "/home/ldelisle/Documents/mygit/mygit/HoxLess"
+
+### Required for all steps ###
+RNAseqFunctionPath<-"~/Documents/mygit/rnaseq_rscripts/RNAseqFunctions.R"
+samplesPlan <- file.path(gitHubDir, "RNAseq/RNAseq_EScells/samplesPlan_HoxLess_ES.txt")
+
+
+
+#### STEP 2 - DESEQ 2 ANALYSIS ###
+# Required
+tableWithCounts <- file.path(gitHubDir, "outputs/RNAseq/RNAseq_EScells/AllHTSeqCounts.txt.gz")
+geneIDColCounts<-"Ens_ID" #Specify here the name of the column which contains the gene IDs (they need to be unique).
+#For the DESeq2 analysis you need to specify a factor on which you want to do the analysis:
+factor<-"Line" #This needs to be a name of a column of the samplesPlan file.
+
+#Optional
+tableWithAnnotations <- file.path(gitHubDir, "outputs/RNAseq/RNAseq_EScells/AllCufflinks_Simplified.txt.gz") # This can be table from cufflinks or cuffdiff or Biomart to annotate genes. You will need to choose a file with at least one column with the Ensembl Gene IDs.
+# geneIDColInAnnotations<-"gene_id"  #Specify here the name of the column which contains the gene IDs (it must match with the content of the geneID from the table with counts).
+# You can also provide a gtf:
+# gtfFile<-"~/RNAseq_analysis/data/mergeOverlapGenesOfFilteredTranscriptsOfMus_musculus.GRCm38.94_ExonsOnly_UCSC_withIsland3.gtf.gz"
+# changeTest<-F #Default test is Wald but you can change to likelihood ratio test (LRT) with reduced formula ~1. Put F to keep Wald and put T to use LRT.
+outputDESeqTable <- file.path(gitHubDir, "outputs/RNAseq/RNAseq_EScells/DESeq2AnalysisForFactorLine.txt")
+#outputSignificantTable<-T #If you want to have another table with only significant genes abs(l2FC)>1.5 and corrected p-value<0.05

@@ -1,0 +1,83 @@
+‘SeuratObject’ was built under R 4.4.0 but the current version is
+4.4.1; it is recomended that you reinstall ‘SeuratObject’ as the ABI
+for R may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+scCustomize v2.1.2
+If you find the scCustomize useful please cite.
+See 'samuel-marsh.github.io/scCustomize/articles/FAQ.html' for citation info.
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+NOTE: FeaturePlot_scCustom uses a specified `na_cutoff` when plotting to
+color cells with no expression as background color separate from color scale.
+Please ensure `na_cutoff` value is appropriate for feature being plotted.
+Default setting is appropriate for use when plotting from 'RNA' assay.
+When `na_cutoff` not appropriate (e.g., module scores) set to NULL to
+plot all cells in gradient color palette.
+
+-----This message will be shown once per session.-----
+Warning messages:
+1: All cells have the same value (0) of “Hoxa2” 
+2: All cells have the same value (0) of “Hoxa3” 
+3: All cells have the same value (0) of “Hoxb1” 
+Warning messages:
+1: Could not find JASPAR2022-MA0070.1 in the default search locations, found in ‘chromvar’ assay instead 
+2: Could not find JASPAR2022-MA0070.1 in the default search locations, found in ‘chromvar’ assay instead 
+3: Could not find JASPAR2022-MA1113.2 in the default search locations, found in ‘chromvar’ assay instead 
+4: Could not find JASPAR2022-MA1113.2 in the default search locations, found in ‘chromvar’ assay instead 
+5: Could not find JASPAR2022-MA1640.1 in the default search locations, found in ‘chromvar’ assay instead 
+6: Could not find JASPAR2022-MA1640.1 in the default search locations, found in ‘chromvar’ assay instead 
+7: Could not find JASPAR2022-MA1639.1 in the default search locations, found in ‘chromvar’ assay instead 
+8: Could not find JASPAR2022-MA1639.1 in the default search locations, found in ‘chromvar’ assay instead 
+Warning messages:
+1: Could not find ISMARA- Nkx1-2 in the default search locations, found in ‘chromvar’ assay instead 
+2: Could not find ISMARA- Nkx1-2 in the default search locations, found in ‘chromvar’ assay instead 
+Warning messages:
+1: Could not find JASPAR2022-MA0878.1 in the default search locations, found in ‘chromvar’ assay instead 
+2: Could not find JASPAR2022-MA0878.1 in the default search locations, found in ‘chromvar’ assay instead 
+Warning messages:
+1: Could not find JASPAR2022-MA0768.2 in the default search locations, found in ‘chromvar’ assay instead 
+2: Could not find JASPAR2022-MA0768.2 in the default search locations, found in ‘chromvar’ assay instead 
+Warning message:
+ggrepel: 35 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 36 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 65 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 66 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 293 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 300 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 181 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 664 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Warning message:
+ggrepel: 1384 unlabeled data points (too many overlaps). Consider increasing max.overlaps 
+Names of identity class contain underscores ('_'), replacing with dashes ('-')
+This message is displayed once every 8 hours.
+First group.by variable `cluster.genotype` starts with a number, appending `g` to ensure valid variable names
+This message is displayed once every 8 hours.
+Warning: The counts layer for the chromvar assay is empty. Skipping assay.
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  25%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================================                  |  75%  |                                                                              |======================================================================| 100%

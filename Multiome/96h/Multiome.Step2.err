@@ -1,0 +1,121 @@
+Loading required package: usethis
+‘SeuratObject’ was built under R 4.4.0 but the current version is
+4.4.1; it is recomended that you reinstall ‘SeuratObject’ as the ABI
+for R may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+Loading required package: Signac
+reading loom file via hdf5r...
+reading loom file via hdf5r...
+  |                                                                              |                                                                      |   0%  |                                                                              |=======================                                               |  33%  |                                                                              |===============================================                       |  67%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=======================                                               |  33%  |                                                                              |===============================================                       |  67%  |                                                                              |======================================================================| 100%
+Warning messages:
+1: The `counts` argument of `DietSeurat()` is deprecated as of Seurat 5.0.0.
+ℹ Please use the `layers` argument instead. 
+2: The `data` argument of `DietSeurat()` is deprecated as of Seurat 5.0.0.
+ℹ Please use the `layers` argument instead. 
+3: The `scale.data` argument of `DietSeurat()` is deprecated as of Seurat 5.0.0.
+ℹ Please use the `layers` argument instead. 
+Warning: Assay RNA changing from Assay5 to Assay
+Registered S3 method overwritten by 'SeuratDisk':
+  method            from  
+  as.sparse.H5Group Seurat
+Creating h5Seurat file for version 3.1.5.9900
+Adding counts for RNA
+Adding data for RNA
+No variable features found for RNA
+No feature-level metadata found for RNA
+Adding counts for spliced
+Adding data for spliced
+No variable features found for spliced
+No feature-level metadata found for spliced
+Adding counts for unspliced
+Adding data for unspliced
+No variable features found for unspliced
+No feature-level metadata found for unspliced
+Adding cell embeddings for pca
+Adding loadings for pca
+No projected loadings for pca
+Adding standard deviations for pca
+No JackStraw data for pca
+Adding cell embeddings for lsi
+Adding loadings for lsi
+No projected loadings for lsi
+Adding standard deviations for lsi
+No JackStraw data for lsi
+Adding cell embeddings for umap
+No loadings for umap
+No projected loadings for umap
+No standard deviations for umap
+No JackStraw data for umap
+Validating h5Seurat file
+Warning: Cannot find assay ATAC in the H5Seurat file
+Warning: Cannot find assay SCT in the H5Seurat file
+Warning: Cannot find assay SCT in the H5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Adding data from RNA as X
+Adding counts from RNA as raw
+Transfering meta.data to obs
+Adding data from spliced as a layer
+Adding data from unspliced as a layer
+Creating h5Seurat file for version 3.1.5.9900
+Adding counts for RNA
+Adding data for RNA
+No variable features found for RNA
+No feature-level metadata found for RNA
+Adding counts for spliced
+Adding data for spliced
+No variable features found for spliced
+No feature-level metadata found for spliced
+Adding counts for unspliced
+Adding data for unspliced
+No variable features found for unspliced
+No feature-level metadata found for unspliced
+Adding cell embeddings for pca
+Adding loadings for pca
+No projected loadings for pca
+Adding standard deviations for pca
+No JackStraw data for pca
+Adding cell embeddings for lsi
+Adding loadings for lsi
+No projected loadings for lsi
+Adding standard deviations for lsi
+No JackStraw data for lsi
+Adding cell embeddings for umap
+No loadings for umap
+No projected loadings for umap
+No standard deviations for umap
+No JackStraw data for umap
+Validating h5Seurat file
+Warning: Cannot find assay ATAC in the H5Seurat file
+Warning: Cannot find assay SCT in the H5Seurat file
+Warning: Cannot find assay SCT in the H5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Warning: Cannot find assaySCT in the h5Seurat file
+Adding data from RNA as X
+Adding counts from RNA as raw
+Transfering meta.data to obs
+Adding data from spliced as a layer
+Adding data from unspliced as a layer
+/usr/local/lib/python3.10/dist-packages/scvelo/preprocessing/utils.py:705: DeprecationWarning: `log1p` is deprecated since scVelo v0.3.0 and will be removed in a future version. Please use `log1p` from `scanpy.pp` instead.
+  log1p(adata)
+/usr/local/lib/python3.10/dist-packages/scvelo/tools/optimization.py:184: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  gamma[i] = np.linalg.pinv(A.T.dot(A)).dot(A.T.dot(y[:, i]))
+/usr/local/lib/python3.10/dist-packages/scvelo/preprocessing/utils.py:705: DeprecationWarning: `log1p` is deprecated since scVelo v0.3.0 and will be removed in a future version. Please use `log1p` from `scanpy.pp` instead.
+  log1p(adata)
+/usr/local/lib/python3.10/dist-packages/scvelo/tools/optimization.py:184: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  gamma[i] = np.linalg.pinv(A.T.dot(A)).dot(A.T.dot(y[:, i]))
+X -> counts
+X -> counts

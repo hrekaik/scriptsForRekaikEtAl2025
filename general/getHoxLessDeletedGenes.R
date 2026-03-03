@@ -1,0 +1,11 @@
+library(rtracklayer)
+url <- "https://zenodo.org/records/10079673/files/mm10_custom102_allGastruloids_min10_extended.gtf.gz"
+temp.file <- tempfile()
+download.file(url, temp.file)
+gtf.extended <- import(temp.file, format = "gtf")
+dels <- import("annotations/hoxBADC_dels.bed")
+deleted <- subsetByOverlaps(gtf.extended, dels)
+cat(unique(deleted$gene_name), sep = "\n", file = "outputs/general/delBADC_genes.txt")
+chry <- GRanges(seqnames = "chrY", ranges = IRanges(0, 1e8))
+chry.genes <- subsetByOverlaps(gtf.extended, chry)
+cat(unique(chry.genes$gene_name), sep = "\n", file = "outputs/general/chrYgenes.txt")

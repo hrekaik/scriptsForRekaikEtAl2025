@@ -1,0 +1,47 @@
+# For cellplex:
+
+# toolshed.g2.bx.psu.edu/repos/iuc/cite_seq_count/cite_seq_count/1.4.4+galaxy0
+# command_version: CITE-seq-Count v1.4.4
+CITE-seq-Count --threads ${GALAXY_SLOTS:-4} --read1 'input_R1.fastqsanger.gz' --read2 'input_R2.fastqsanger.gz' --tags 'CMO_seq csv.csv' \
+    --cell_barcode_first_base 1 --cell_barcode_last_base 16 --umi_first_base 17 --umi_last_base 28 --bc_collapsing_dist 1 \
+    --umi_collapsing_dist 2  --expected_cells 24000 --whitelist 'cellranger_barcodes_3M-february-2018.txt.txt' --max-error 2    
+ gunzip Results/read_count/barcodes.tsv.gz 
+ gunzip Results/read_count/features.tsv.gz 
+ gunzip Results/read_count/matrix.mtx.gz 
+ gunzip Results/umi_count/barcodes.tsv.gz 
+ gunzip Results/umi_count/features.tsv.gz 
+ gunzip Results/umi_count/matrix.mtx.gz
+
+# Then the barcodes were translated with awk:
+# {split($1,a,""); a[8]=a[8]=="A"?"T":a[8]=="T"?"A":a[8]=="C"?"G":"C"; a[9]=a[9]=="A"?"T":a[9]=="T"?"A":a[9]=="C"?"G":"C"; print a[1]a[2]a[3]a[4]a[5]a[6]a[7]a[8]a[9]a[10]a[11]a[12]a[13]a[14]a[15]a[16]}
+
+# For Gene expression:
+
+# toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.10b+galaxy3
+STAR  --runThreadN ${GALAXY_SLOTS:-4} --genomeLoad NoSharedMemory --genomeDir '/data/galaxy/galaxy/var/tool-data/rnastar/2.7.4a/mm10_UCSC/mm10_UCSC/dataset_163252_files' \
+    --sjdbOverhang 100 --sjdbGTFfile 'input.gtf'   --soloType CB_UMI_Simple   --readFilesIn input_R1.fastq.gz input_R2.fastq.gz --soloCBmatchWLtype 1MM_multi  \
+    --readFilesCommand zcat   --soloCBwhitelist 'cellranger_barcodes_3M-february-2018.txt.txt' --soloBarcodeReadLength 1 --soloCBstart 1 --soloCBlen 16 --soloUMIstart 17 \
+    --soloUMIlen 12   --soloStrand Forward --soloFeatures Gene --soloUMIdedup 1MM_CR --soloUMIfiltering - --quantMode TranscriptomeSAM GeneCounts  \
+    --outSAMattributes NH HI AS nM GX GN CB UB --outSAMtype BAM SortedByCoordinate  --soloCellFilter None  --soloOutFormatFeaturesGeneField3 'Gene Expression' \
+    --outSAMunmapped None --outSAMmapqUnique 60  --limitOutSJoneRead 1000 --limitOutSJcollapsed 1000000 --limitSjdbInsertNsj 1000000     
+ mv Solo.out/Gene Solo.out/soloFeatures 
+ cat <(echo "Barcodes:") Solo.out/Barcodes.stats <(echo "Genes:") Solo.out/soloFeatures/Features.stats > 'RNA STARSolo on data 47, data 38, and others: Barcode/Feature Statistic Summaries.txt'  
+ samtools view -b -o 'RNA STARSolo on data 47, data 38, and others: Alignments.bam' Aligned.sortedByCoord.out.bam
+
+# toolshed.g2.bx.psu.edu/repos/iuc/dropletutils/dropletutils/1.10.0+galaxy2
+# command_version:
+mkdir 'tenx.input' 
+ ln -s 'RNA STARSolo on data 47, data 38, and others: Matrix Gene Counts raw.mtx' 'tenx.input/matrix.mtx' 
+ ln -s 'RNA STARSolo on data 47, data 38, and others: Genes raw.tsv' 'tenx.input/genes.tsv' 
+ ln -s 'RNA STARSolo on data 47, data 38, and others: Barcodes raw.tsv' 'tenx.input/barcodes.tsv' 
+  mkdir 'tenx.output' 
+  Rscript '/data/galaxy/galaxy/var/shed_tools/toolshed.g2.bx.psu.edu/repos/iuc/dropletutils/a9caad671439/dropletutils/scripts/dropletutils.Rscript' '/data/galaxy/galaxy/jobs/000/107/107308/configs/tmptrjig6gs'
+
+# toolshed.g2.bx.psu.edu/repos/iuc/velocyto_cli/velocyto_cli/0.17.17+galaxy2
+# command_version:Matplotlib created a temporary config/cache directory at /data/galaxy/galaxy/jobs/000/148/148313/tmp/matplotlib-9qih9z05 because the default path (/data/galaxy/galaxy/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+velocyto, version 0.17.17
+export NUMBA_CACHE_DIR="${TEMP:-/tmp}";  mkdir -p 'input/outs/filtered_gene_bc_matrices/whatever/' 
+ ln -s 'RNA STARSolo on data 45, data 12, and others: Alignments.bam' 'input/outs/possorted_genome_bam.bam' 
+ ln -s 'DropletUtils 10X Barcodes on data 55, data 54, and data 56.tsv' 'input/outs/filtered_gene_bc_matrices/whatever/barcodes.tsv' 
+ velocyto  run10x  -t 'uint16'  --samtools-threads ${GALAXY_SLOTS:-1} --samtools-memory ${GALAXY_MEMORY_MB:-100}  '-vv' 'input' 'bf5a119_mm10_allGastruloids_min10_extended.gtf.gz.gtf' 
+ mv 'input/velocyto/'*.loom 'output.loom'

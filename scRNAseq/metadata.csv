@@ -1,0 +1,14 @@
+Sample.ID;Sample.name;Sample.type;RDS;Directory;Time;Replicate;Genotype;Well.10x;Multiplexing
+1;wt_96h_rep1;wt_96h_rep1;HoxLess_CellPlex_1_wt_96h_rep1;HoxLess_CellPlex_1;96h;1;wt;1;CellPlex
+2;96h.WT.rep4;Mayran_wt_96h_rep4;Pool.96h.Rep4.5_96h.WT.rep4;Pool.96h.Rep4.5;96h;4;wt;5;CellPlex
+3;wt_72h_rep1;wt_72h_rep1;HoxLess_CellPlex_2_wt_72h_rep1;HoxLess_CellPlex_2;72h;1;wt;9;CellPlex
+4;wt_120h_rep1;wt_120h_rep1;HoxLess_CellPlex_3_wt_120h_rep1;HoxLess_CellPlex_3;120h;1;wt;10;CellPlex
+5;BADC_72h_rep1;BADC_NT_72h_rep1;HoxLess_CellPlex_4_BADC_72h_rep1;HoxLess_CellPlex_4;72h;1;BADC;11;CellPlex
+6;BADC_72h_rep2;BADC_NT_72h_rep2;HoxLess_CellPlex_4_BADC_72h_rep2;HoxLess_CellPlex_4;72h;2;BADC;11;CellPlex
+7;BADC_96h_rep1;BADC_NT_96h_rep1;HoxLess_CellPlex_4_BADC_96h_rep1;HoxLess_CellPlex_4;96h;1;BADC;11;CellPlex
+8;BADC_96h_rep2;BADC_NT_96h_rep2;HoxLess_CellPlex_4_BADC_96h_rep2;HoxLess_CellPlex_4;96h;2;BADC;11;CellPlex
+9;wt_120h_rep2;wt_120h_rep2;HoxLess_CellPlex_4_wt_120h_rep2;HoxLess_CellPlex_4;120h;2;wt;11;CellPlex
+10;BADC_120h_rep1;BADC_NT_120h_rep1;HoxLess_CellPlex_4_BADC_120h_rep1;HoxLess_CellPlex_4;120h;1;BADC;11;CellPlex
+11;BADC_120h_rep2;BADC_NT_120h_rep2;HoxLess_CellPlex_4_BADC_120h_rep2;HoxLess_CellPlex_4;120h;2;BADC;11;CellPlex
+12;wt_144h_rep1;wt_144h_rep1;HoxLess_CellPlex_5_wt_144h_rep1;HoxLess_CellPlex_5;144h;1;wt;14;CellPlex
+13;BADC_144h_rep1;BADC_144h_rep1;HoxLess_CellPlex_5_BADC_144h_rep1;HoxLess_CellPlex_5;144h;1;BADC;14;CellPlex

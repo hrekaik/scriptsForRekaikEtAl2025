@@ -1,0 +1,159 @@
+A: Allantois, AER: Apical ectodermal ridge, AFP: Anterior floor plate, AM: Amniochorionic mesoderm, AMA: Amniochorionic mesoderm A, AMB: Amniochorionic mesoderm B, APS: Anterior primitive streak, BAE: Branchial arch epithelium, BP: Blood progenitors, CAOP: Chondrocyte and osteoblast progenitors, CLE: Caudal lateral epiblast, CN: Caudal neuroectoderm, D: Di/telencephalon, DE: Definitive endoderm, EE: Extraembryonic ectoderm, EM: Extraembryonic mesoderm, En: Endothelium, Ep: Epiblast, EVE: Embryonic visceral endoderm, ExVE: Extraembryonic visceral endoderm, F: Forebrain/midbrain, FE: Fusing epithelium, FHF: First heart field, G: Gut, GALE: Gut and lung epithelium, H: Hepatocytes, HB: Hindbrain, HP: Hematoendothelial progenitors, IM: Intermediate mesoderm, LMP: Limb mesenchyme progenitors, M: Mesencephalon/MHB, MM: Mixed mesoderm, MN: Motor neurons, MSC: Mesenchymal stromal cells, N: Notochord, NA: NA, NC: Neural crest, NCPG: Neural crest (PNS glia), NCPN: Neural crest (PNS neurons), NM: Nascent mesoderm, NMPs: Neuromesodermal progenitors, NPC: Neuron progenitor cells, OlE: Olfactory epithelium, OPA: Osteoblast progenitors A, OPB: Osteoblast progenitors B, OtE: Otic epithelium, PA: Placodal area, PE: Parietal endoderm, PEC: Primitive erythroid cells, PFP: Posterior floor plate, PGC: Primordial germ cells, PK: Pre-epidermal keratinocytes, PMA: Paraxial mesoderm A, PMB: Paraxial mesoderm B, PMC: Paraxial mesoderm C, PSAAE: Primitive streak and adjacent ectoderm, RE: Renal epithelium, ReP: Retinal primordium, RN: Rostral neuroectoderm, RP: Roof plate, SC: Spinal cord, SCD: Spinal cord (dorsal), SCV: Spinal cord (ventral), SE: Surface ectoderm, SHF: Second heart field, SMP: Skeletal muscle progenitors, SoM: Somatic mesoderm, SpM: Splanchnic mesodermnull device 
+          1 
+             used    (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    3618310   193.3    6392537   341.4    6392537   341.4
+Vcells 5084892747 38794.7 8081246380 61655.1 5607246981 42779.9
+null device 
+          1 
+             used    (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    3630681   193.9    6392538   341.4    6392538   341.4
+Vcells 4869997196 37155.2 9697575656 73986.7 9352034266 71350.4
+
+               Amniochorionic mesoderm              Amniochorionic mesoderm A 
+                                     1                                      4 
+             Amniochorionic mesoderm B                Apical ectodermal ridge 
+                                     1                                     63 
+                     Blood progenitors              Branchial arch epithelium 
+                                     1                                     75 
+               Caudal lateral epiblast                   Caudal neuroectoderm 
+                                  2271                                   1135 
+Chondrocyte and osteoblast progenitors                    Definitive endoderm 
+                                    30                                     10 
+                      Di/telencephalon                               Epiblast 
+                                   170                                      1 
+               Extraembryonic ectoderm                Extraembryonic mesoderm 
+                                     2                                    189 
+                    Forebrain/midbrain                      Fusing epithelium 
+                                   280                                     18 
+                                   Gut                Gut and lung epithelium 
+                                    27                                      9 
+                             Hindbrain                  Intermediate mesoderm 
+                                   858                                    124 
+           Limb mesenchyme progenitors                      Mesencephalon/MHB 
+                                    28                                    495 
+             Mesenchymal stromal cells                         Mixed mesoderm 
+                                    31                                     47 
+                         Motor neurons                       Nascent mesoderm 
+                                    32                                    629 
+                          Neural crest                Neural crest (PNS glia) 
+                                   112                                    108 
+            Neural crest (PNS neurons)            Neuromesodermal progenitors 
+                                    25                                   1323 
+               Neuron progenitor cells                              Notochord 
+                                   155                                      3 
+                  Olfactory epithelium               Osteoblast progenitors A 
+                                    54                                     20 
+              Osteoblast progenitors B                        Otic epithelium 
+                                    49                                     50 
+                   Paraxial mesoderm A                    Paraxial mesoderm B 
+                                    55                                   3097 
+                   Paraxial mesoderm C                          Placodal area 
+                                   911                                    649 
+                 Posterior floor plate            Pre-epidermal keratinocytes 
+                                    51                                    701 
+Primitive streak and adjacent ectoderm                  Primordial germ cells 
+                                    94                                    223 
+                      Renal epithelium                     Retinal primordium 
+                                     6                                     21 
+                            Roof plate                  Rostral neuroectoderm 
+                                   121                                   1663 
+           Skeletal muscle progenitors                       Somatic mesoderm 
+                                    66                                     21 
+                           Spinal cord                   Spinal cord (dorsal) 
+                                   609                                    673 
+                 Spinal cord (ventral)                    Splanchnic mesoderm 
+                                   771                                     11 
+                      Surface ectoderm 
+                                  2268 
+             used    (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    3790190   202.5    6392538   341.4    6392538   341.4
+Vcells 1978233415 15092.8 7758060525 59189.4 9612710770 73339.2
+
+                             Allantois                Amniochorionic mesoderm 
+                                  1954                                   2468 
+             Amniochorionic mesoderm A              Amniochorionic mesoderm B 
+                                  1192                                   1093 
+                  Anterior floor plate              Anterior primitive streak 
+                                   254                                   1263 
+                          Anterior PSM                Apical ectodermal ridge 
+                                  1033                                    103 
+                     Blood progenitors              Branchial arch epithelium 
+                                  2832                                    306 
+                       Caudal Epiblast                Caudal lateral epiblast 
+                                   502                                   2336 
+                       Caudal Mesoderm                   Caudal neuroectoderm 
+                                  1477                                   1156 
+Chondrocyte and osteoblast progenitors                    Definitive endoderm 
+                                  1823                                    836 
+                   Definitive Endoderm                           Dermo/Sclero 
+                                   263                                   1134 
+                      Di/telencephalon            Embryonic visceral endoderm 
+                                  1372                                   1260 
+                           Endothelial                            Endothelium 
+                                    33                                   1715 
+                              Epiblast                Extraembryonic ectoderm 
+                                 11695                                  10478 
+               Extraembryonic mesoderm       Extraembryonic visceral endoderm 
+                                  4175                                   9165 
+                     First heart field                     Forebrain/midbrain 
+                                  1181                                   2769 
+                     Fusing epithelium                                    Gut 
+                                   165                                   1801 
+               Gut and lung epithelium          Hematoendothelial progenitors 
+                                   221                                   2803 
+                           Hepatocytes                              Hindbrain 
+                                    35                                   2548 
+                 Intermediate mesoderm            Limb mesenchyme progenitors 
+                                   488                                    622 
+                     Mesencephalon/MHB              Mesenchymal stromal cells 
+                                  1339                                    264 
+                        Mixed mesoderm                         Mixed Mesoderm 
+                                   999                                    700 
+                         Motor neurons                       Nascent mesoderm 
+                                   181                                   5108 
+                      Nascent Mesoderm                           Neural crest 
+                                  2094                                    849 
+               Neural crest (PNS glia)             Neural crest (PNS neurons) 
+                                   454                                    161 
+                           Neural Tube            Neuromesodermal progenitors 
+                                   507                                   2213 
+               Neuron progenitor cells                                   NMPs 
+                                   468                                   1119 
+                             Notochord                   Olfactory epithelium 
+                                   560                                    156 
+              Osteoblast progenitors A               Osteoblast progenitors B 
+                                   490                                    788 
+                       Otic epithelium                    Paraxial mesoderm A 
+                                   104                                   4097 
+                   Paraxial mesoderm B                    Paraxial mesoderm C 
+                                  3408                                    922 
+                     Parietal endoderm                                    PGC 
+                                   306                                    149 
+                         Placodal area                  Posterior floor plate 
+                                   761                                    453 
+                         Posterior PSM            Pre-epidermal keratinocytes 
+                                   851                                    971 
+             Primitive erythroid cells                       Primitive Streak 
+                                  7504                                   3294 
+Primitive streak and adjacent ectoderm                  Primordial germ cells 
+                                  8199                                    325 
+                      Renal epithelium                     Retinal primordium 
+                                    34                                    196 
+                            Roof plate                  Rostral neuroectoderm 
+                                   203                                   4970 
+                    Second heart field            Skeletal muscle progenitors 
+                                   568                                   1156 
+                      Somatic mesoderm                       Somitic Mesoderm 
+                                   812                                   1993 
+                           Spinal cord                   Spinal cord (dorsal) 
+                                  1694                                   1089 
+                 Spinal cord (ventral)                    Splanchnic mesoderm 
+                                  1382                                   4085 
+                      Surface ectoderm                                Unknown 
+                                  2439                                     64 
+                             global_stage
+global_cell_type              120h  72h  96h E7.5 E7.75   E8 E8.25 E8.5a E9.5
+  Caudal Epiblast               15    8  479    0     0    0     0     0    0
+  Caudal lateral epiblast        0    0    0  380   576 1111   269     0    0
+  Neuromesodermal progenitors    0    0    0    0     0    0   985   963  265
+  NMPs                        1068    1   50    0     0    0     0     0    0

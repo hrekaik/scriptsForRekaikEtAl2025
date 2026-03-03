@@ -1,0 +1,14 @@
+‘SeuratObject’ was built under R 4.4.0 but the current version is
+4.4.1; it is recomended that you reinstall ‘SeuratObject’ as the ABI
+for R may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+As of Seurat v5, we recommend using AggregateExpression to perform pseudo-bulk analysis.
+This message is displayed once per session.
+First group.by variable `Well.10x` starts with a number, appending `g` to ensure valid variable names
+This message is displayed once every 8 hours.

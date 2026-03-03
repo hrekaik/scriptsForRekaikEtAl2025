@@ -1,0 +1,156 @@
+HoxLess_CellPlex_1 RDS is not found will proceed for new sample
+sample is cellPlex, will perform demultiplexing
+Read CMO matrix...
+ done
+Read GEX matrix...
+performing demultiplexing...
+done
+
+  multiplet          NA    negative       noCMO   uncertain wt_96h_rep1 
+       5429       12164        1213          52          45        1813 
+
+multiplet  negative     noCMO   singlet uncertain 
+     5429      1213        52     13977        45 
+
+         NA    negative wt_96h_rep1 
+      12164        1213        1813 
+
+negative  singlet 
+    1213    13977 
+saving RDS of HoxLess_CellPlex_1
+saving RDS of wt_96h_rep1 from HoxLess_CellPlex_1
+saving RDS of NA from HoxLess_CellPlex_1
+saving RDS of negative from HoxLess_CellPlex_1
+Pool.96h.Rep4.5 RDS is not found will proceed for new sample
+sample is cellPlex, will perform demultiplexing
+Read CMO matrix...
+ done
+Read GEX matrix...
+performing demultiplexing...
+done
+
+96h.WT.rep4 96h.WT.rep5   multiplet          NA    negative       noCMO 
+       1471        1921        1584        8001        1016          10 
+  uncertain 
+         30 
+
+multiplet  negative     noCMO   singlet uncertain 
+     1584      1016        10     11393        30 
+
+96h.WT.rep4 96h.WT.rep5          NA    negative 
+       1471        1921        8001        1016 
+
+negative  singlet 
+    1016    11393 
+saving RDS of Pool.96h.Rep4.5
+saving RDS of NA from Pool.96h.Rep4.5
+saving RDS of 96h.WT.rep4 from Pool.96h.Rep4.5
+saving RDS of 96h.WT.rep5 from Pool.96h.Rep4.5
+saving RDS of negative from Pool.96h.Rep4.5
+HoxLess_CellPlex_2 RDS is not found will proceed for new sample
+sample is cellPlex, will perform demultiplexing
+Read CMO matrix...
+ done
+Read GEX matrix...
+performing demultiplexing...
+done
+
+  multiplet          NA    negative       noCMO   uncertain wt_72h_rep1 
+       5867       14097         554          48         433        1566 
+
+multiplet  negative     noCMO   singlet uncertain 
+     5867       554        48     15663       433 
+
+         NA    negative wt_72h_rep1 
+      14097         554        1566 
+
+negative  singlet 
+     554    15663 
+saving RDS of HoxLess_CellPlex_2
+saving RDS of NA from HoxLess_CellPlex_2
+saving RDS of wt_72h_rep1 from HoxLess_CellPlex_2
+saving RDS of negative from HoxLess_CellPlex_2
+HoxLess_CellPlex_3 RDS is not found will proceed for new sample
+sample is cellPlex, will perform demultiplexing
+Read CMO matrix...
+ done
+Read GEX matrix...
+performing demultiplexing...
+done
+
+   multiplet           NA     negative        noCMO    uncertain wt_120h_rep1 
+        5761        10414          565           26           35         1465 
+
+multiplet  negative     noCMO   singlet uncertain 
+     5761       565        26     11879        35 
+
+          NA     negative wt_120h_rep1 
+       10414          565         1465 
+
+negative  singlet 
+     565    11879 
+saving RDS of HoxLess_CellPlex_3
+saving RDS of NA from HoxLess_CellPlex_3
+saving RDS of wt_120h_rep1 from HoxLess_CellPlex_3
+saving RDS of negative from HoxLess_CellPlex_3
+HoxLess_CellPlex_4 RDS is not found will proceed for new sample
+sample is cellPlex, will perform demultiplexing
+Read CMO matrix...
+ done
+Read GEX matrix...
+performing demultiplexing...
+done
+
+BADC_120h_rep1 BADC_120h_rep2  BADC_72h_rep1  BADC_72h_rep2  BADC_96h_rep1 
+          1739           1756           1476            963           1787 
+ BADC_96h_rep2      multiplet             NA       negative          noCMO 
+          1664           6341           3187            773             20 
+     uncertain   wt_120h_rep2 
+           126           1620 
+
+multiplet  negative     noCMO   singlet uncertain 
+     6341       773        20     14192       126 
+
+BADC_120h_rep1 BADC_120h_rep2  BADC_72h_rep1  BADC_72h_rep2  BADC_96h_rep1 
+          1739           1756           1476            963           1787 
+ BADC_96h_rep2             NA       negative   wt_120h_rep2 
+          1664           3187            773           1620 
+
+negative  singlet 
+     773    14192 
+saving RDS of HoxLess_CellPlex_4
+saving RDS of wt_120h_rep2 from HoxLess_CellPlex_4
+saving RDS of BADC_96h_rep1 from HoxLess_CellPlex_4
+saving RDS of BADC_120h_rep1 from HoxLess_CellPlex_4
+saving RDS of NA from HoxLess_CellPlex_4
+saving RDS of BADC_120h_rep2 from HoxLess_CellPlex_4
+saving RDS of BADC_72h_rep2 from HoxLess_CellPlex_4
+saving RDS of BADC_72h_rep1 from HoxLess_CellPlex_4
+saving RDS of BADC_96h_rep2 from HoxLess_CellPlex_4
+saving RDS of negative from HoxLess_CellPlex_4
+
+Here is the list of rds files which needs to be accordingly present in your metadata file.
+Ensure to place CellPlex samples in the correct order as it is processed in a random order
+HoxLess_CellPlex_1_wt_96h_rep1
+HoxLess_CellPlex_1_NA
+HoxLess_CellPlex_1_negative
+Pool.96h.Rep4.5_NA
+Pool.96h.Rep4.5_96h.WT.rep4
+Pool.96h.Rep4.5_96h.WT.rep5
+Pool.96h.Rep4.5_negative
+HoxLess_CellPlex_2_NA
+HoxLess_CellPlex_2_wt_72h_rep1
+HoxLess_CellPlex_2_negative
+HoxLess_CellPlex_3_NA
+HoxLess_CellPlex_3_wt_120h_rep1
+HoxLess_CellPlex_3_negative
+HoxLess_CellPlex_4_wt_120h_rep2
+HoxLess_CellPlex_4_BADC_96h_rep1
+HoxLess_CellPlex_4_BADC_120h_rep1
+HoxLess_CellPlex_4_NA
+HoxLess_CellPlex_4_BADC_120h_rep2
+HoxLess_CellPlex_4_BADC_72h_rep2
+HoxLess_CellPlex_4_BADC_72h_rep1
+HoxLess_CellPlex_4_BADC_96h_rep2
+HoxLess_CellPlex_4_negative
+

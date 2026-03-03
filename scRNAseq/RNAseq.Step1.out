@@ -1,0 +1,22 @@
+loading HoxLess_CellPlex_1_wt_96h_rep1
+loading Pool.96h.Rep4.5_96h.WT.rep4
+loading HoxLess_CellPlex_2_wt_72h_rep1
+loading HoxLess_CellPlex_3_wt_120h_rep1
+loading HoxLess_CellPlex_4_BADC_72h_rep1
+loading HoxLess_CellPlex_4_BADC_72h_rep2
+loading HoxLess_CellPlex_4_BADC_96h_rep1
+loading HoxLess_CellPlex_4_BADC_96h_rep2
+loading HoxLess_CellPlex_4_wt_120h_rep2
+loading HoxLess_CellPlex_4_BADC_120h_rep1
+loading HoxLess_CellPlex_4_BADC_120h_rep2
+Merging dataset...
+done 
+Scaling merged object..
+Done
+more than one 10x well detected, restricting variable features to limit batch effect 
+variable features will include gene with expression between 0.05 and 0.8 percentile
+Performing PCA analysis..
+Done
+Saving RDS file...
+Done
+the seurat object has been saved to: combined_AlltimewtvsBADC_dafd6eb6.RDS

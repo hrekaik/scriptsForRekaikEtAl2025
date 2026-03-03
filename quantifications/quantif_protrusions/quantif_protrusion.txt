@@ -1,0 +1,31 @@
+wt_120h_rep1_(23032024)	BADC_120h_rep1_(23032024)	wt_120h_rep2_(1092025)	BADC_120h_rep2_(1092025)	wt_120h_rep3_(9102025)	BADC_120h_rep3_(9102025)	wt_120h_rep4_(100825)	BADC_120h_rep4_(100825)
+no	no	no	yes	no	no	no	yes
+yes	yes	no	yes	no	no	no	yes
+no	no	no	no	no	yes	no	yes
+no	yes	yes	yes	yes	yes	no	no
+yes	yes	no	yes	no	no	no	yes
+no	no	no	yes	no	no	no	yes
+no	yes	no	no	no	no	yes	yes
+no	yes	no	no	no	no	no	no
+yes	yes	no	yes	no	yes	no	no
+no	yes	no	yes	no	yes	no	yes
+no	yes	no	no	no	no	no	no
+no	yes	no	no	no	no	no	yes
+no	no		yes	no	yes	yes	yes
+no	yes			no	no	no	yes
+no	yes			yes	no	no	yes
+no	yes			no	no	no	yes
+no	yes			no	yes	no	no
+no	no			no	no	no	yes
+no	yes				yes	no	no
+no					no	no	no
+no					no	yes	no
+						no	no
+						no	yes
+						no	yes
+						no	yes
+							yes
+							yes
+							yes
+							no
+							yes

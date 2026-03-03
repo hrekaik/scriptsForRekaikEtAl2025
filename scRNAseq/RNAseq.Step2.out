@@ -1,0 +1,80 @@
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 15213
+Number of edges: 633642
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8555
+Number of communities: 15
+Elapsed time: 1 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 15213
+Number of edges: 633642
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.7955
+Number of communities: 21
+Elapsed time: 1 seconds
+AnnData object with n_obs × n_vars = 15213 × 32075
+    obs: 'orig.ident', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'allCMO', 'Prob.CMO', 'sample.CMO', 'S.Score', 'G2M.Score', 'Phase', 'old.ident', 'Sample.ID', 'Sample.name', 'Sample.type', 'RDS', 'Directory', 'Time', 'Replicate', 'Genotype', 'Well.10x', 'RNA_snn_res.0.8', 'seurat_clusters', 'RNA_snn_res.1.5', 'Fate', 'Fate_reverse_order', 'nCount_unspliced', 'nFeature_unspliced'
+    var: 'vf_vst_counts.1_mean', 'vf_vst_counts.1_variance', 'vf_vst_counts.1_variance.expected', 'vf_vst_counts.1_variance.standardized', 'vf_vst_counts.1_variable', 'vf_vst_counts.1_rank', 'vf_vst_counts.2_mean', 'vf_vst_counts.2_variance', 'vf_vst_counts.2_variance.expected', 'vf_vst_counts.2_variance.standardized', 'vf_vst_counts.2_variable', 'vf_vst_counts.2_rank', 'vf_vst_counts.3_mean', 'vf_vst_counts.3_variance', 'vf_vst_counts.3_variance.expected', 'vf_vst_counts.3_variance.standardized', 'vf_vst_counts.3_variable', 'vf_vst_counts.3_rank', 'vf_vst_counts.4_mean', 'vf_vst_counts.4_variance', 'vf_vst_counts.4_variance.expected', 'vf_vst_counts.4_variance.standardized', 'vf_vst_counts.4_variable', 'vf_vst_counts.4_rank', 'vf_vst_counts.5_mean', 'vf_vst_counts.5_variance', 'vf_vst_counts.5_variance.expected', 'vf_vst_counts.5_variance.standardized', 'vf_vst_counts.5_variable', 'vf_vst_counts.5_rank', 'vf_vst_counts.6_mean', 'vf_vst_counts.6_variance', 'vf_vst_counts.6_variance.expected', 'vf_vst_counts.6_variance.standardized', 'vf_vst_counts.6_variable', 'vf_vst_counts.6_rank', 'vf_vst_counts.7_mean', 'vf_vst_counts.7_variance', 'vf_vst_counts.7_variance.expected', 'vf_vst_counts.7_variance.standardized', 'vf_vst_counts.7_variable', 'vf_vst_counts.7_rank', 'vf_vst_counts.8_mean', 'vf_vst_counts.8_variance', 'vf_vst_counts.8_variance.expected', 'vf_vst_counts.8_variance.standardized', 'vf_vst_counts.8_variable', 'vf_vst_counts.8_rank', 'vf_vst_counts.9_mean', 'vf_vst_counts.9_variance', 'vf_vst_counts.9_variance.expected', 'vf_vst_counts.9_variance.standardized', 'vf_vst_counts.9_variable', 'vf_vst_counts.9_rank', 'vf_vst_counts.10_mean', 'vf_vst_counts.10_variance', 'vf_vst_counts.10_variance.expected', 'vf_vst_counts.10_variance.standardized', 'vf_vst_counts.10_variable', 'vf_vst_counts.10_rank', 'vf_vst_counts.11_mean', 'vf_vst_counts.11_variance', 'vf_vst_counts.11_variance.expected', 'vf_vst_counts.11_variance.standardized', 'vf_vst_counts.11_variable', 'vf_vst_counts.11_rank', 'var.features', 'var.features.rank'
+    obsm: 'X_pca', 'X_umap'
+Filtered out 21812 genes that are detected 20 counts (shared).
+WARNING: Did not normalize X as it looks processed already. To enforce normalization, set `enforce=True`.
+Normalized count data: spliced, unspliced.
+Extracted 4000 highly variable genes.
+Logarithmized X.
+computing moments based on connectivities
+    finished (0:00:05) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:05) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing velocity graph (using 1/72 cores)
+WARNING: Unable to create progress bar. Consider installing `tqdm` as `pip install tqdm` and `ipywidgets` as `pip install ipywidgets`,
+or disable the progress bar using `show_progress_bar=False`.
+    finished (0:00:34) --> added 
+    'velocity_graph', sparse matrix with cosine correlations (adata.uns)
+recovering dynamics (using 1/72 cores)
+    finished (0:16:03) --> added 
+    'fit_pars', fitted parameters for splicing dynamics (adata.var)
+computing terminal states
+    identified 0 region of root cells and 1 region of end points .
+    finished (0:00:00) --> added
+    'root_cells', root cells of Markov diffusion process (adata.obs)
+    'end_points', end points of Markov diffusion process (adata.obs)
+WARNING: No root cells detected. Consider specifying root cells to improve latent time prediction.
+computing latent time using root_cells as prior
+    finished (0:00:03) --> added 
+    'latent_time', shared time (adata.obs)
+Filtered out 22926 genes that are detected 20 counts (shared).
+WARNING: Did not normalize X as it looks processed already. To enforce normalization, set `enforce=True`.
+Normalized count data: spliced, unspliced.
+Extracted 4000 highly variable genes.
+Logarithmized X.
+computing moments based on connectivities
+    finished (0:00:03) --> added 
+    'Ms' and 'Mu', moments of un/spliced abundances (adata.layers)
+computing velocities
+    finished (0:00:02) --> added 
+    'velocity', velocity vectors for each individual cell (adata.layers)
+computing velocity graph (using 1/72 cores)
+    finished (0:00:11) --> added 
+    'velocity_graph', sparse matrix with cosine correlations (adata.uns)
+recovering dynamics (using 1/72 cores)
+    finished (0:05:44) --> added 
+    'fit_pars', fitted parameters for splicing dynamics (adata.var)
+computing terminal states
+    identified 2 regions of root cells and 1 region of end points .
+    finished (0:00:00) --> added
+    'root_cells', root cells of Markov diffusion process (adata.obs)
+    'end_points', end points of Markov diffusion process (adata.obs)
+computing latent time using root_cells as prior
+    finished (0:00:01) --> added 
+    'latent_time', shared time (adata.obs)
+computing velocity embedding
+    finished (0:00:01) --> added
+    'velocity_umap', embedded velocity vectors (adata.obsm)
+saving figure to file ../../scriptsForRekaikEtAl2025/outputs/scRNAseq//velo_on_umap_BADC.pdf
+[1] TRUE

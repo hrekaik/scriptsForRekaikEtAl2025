@@ -1,0 +1,1 @@
+cmd = scriptsForRekaikEtAl2025/outputs/Multiome/1_wt_for_Homer.bed inputs_galaxy/mm10_UCSC.fa scriptsForRekaikEtAl2025/outputs/Multiome/1_wt_for_Homer_motifs -size given -len 8,10,12

@@ -1,0 +1,2267 @@
+Loading required package: usethis
+‘SeuratObject’ was built under R 4.4.0 but the current version is
+4.4.1; it is recomended that you reinstall ‘SeuratObject’ as the ABI
+for R may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:SeuratObject’:
+
+    intersect
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:sp’:
+
+    %over%
+
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘rtracklayer’
+
+The following object is masked from ‘package:BiocIO’:
+
+    FileForFormat
+
+trying URL 'https://hugheslab.ccbr.utoronto.ca/supplementary-data/homeodomains1/pwm_all_102107.txt'
+Content type 'text/plain' length 222446 bytes (217 KB)
+==================================================
+downloaded 217 KB
+
+trying URL 'https://swissregulon.unibas.ch/data/mm10_f5/mm10_weight_matrices_v2'
+Content type 'unknown' length 339466 bytes (331 KB)
+==================================================
+downloaded 331 KB
+
+There were 50 or more warnings (use warnings() to see the first 50)
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif1.motif'
+Content type 'text/plain; charset=UTF-8' length 570 bytes
+==================================================
+downloaded 570 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif2.motif'
+Content type 'text/plain; charset=UTF-8' length 493 bytes
+==================================================
+downloaded 493 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif3.motif'
+Content type 'text/plain; charset=UTF-8' length 588 bytes
+==================================================
+downloaded 588 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif4.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif5.motif'
+Content type 'text/plain; charset=UTF-8' length 886 bytes
+==================================================
+downloaded 886 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif6.motif'
+Content type 'text/plain; charset=UTF-8' length 753 bytes
+==================================================
+downloaded 753 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif7.motif'
+Content type 'text/plain; charset=UTF-8' length 530 bytes
+==================================================
+downloaded 530 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif8.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif9.motif'
+Content type 'text/plain; charset=UTF-8' length 497 bytes
+==================================================
+downloaded 497 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif10.motif'
+Content type 'text/plain; charset=UTF-8' length 480 bytes
+==================================================
+downloaded 480 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif11.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif12.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif13.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif14.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif15.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif16.motif'
+Content type 'text/plain; charset=UTF-8' length 494 bytes
+==================================================
+downloaded 494 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif17.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif18.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif19.motif'
+Content type 'text/plain; charset=UTF-8' length 454 bytes
+==================================================
+downloaded 454 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif20.motif'
+Content type 'text/plain; charset=UTF-8' length 457 bytes
+==================================================
+downloaded 457 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif21.motif'
+Content type 'text/plain; charset=UTF-8' length 564 bytes
+==================================================
+downloaded 564 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif22.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif23.motif'
+Content type 'text/plain; charset=UTF-8' length 482 bytes
+==================================================
+downloaded 482 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif24.motif'
+Content type 'text/plain; charset=UTF-8' length 550 bytes
+==================================================
+downloaded 550 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif25.motif'
+Content type 'text/plain; charset=UTF-8' length 451 bytes
+==================================================
+downloaded 451 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif26.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif27.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif28.motif'
+Content type 'text/plain; charset=UTF-8' length 385 bytes
+==================================================
+downloaded 385 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif29.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif30.motif'
+Content type 'text/plain; charset=UTF-8' length 680 bytes
+==================================================
+downloaded 680 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif31.motif'
+Content type 'text/plain; charset=UTF-8' length 738 bytes
+==================================================
+downloaded 738 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif32.motif'
+Content type 'text/plain; charset=UTF-8' length 489 bytes
+==================================================
+downloaded 489 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif33.motif'
+Content type 'text/plain; charset=UTF-8' length 439 bytes
+==================================================
+downloaded 439 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif34.motif'
+Content type 'text/plain; charset=UTF-8' length 640 bytes
+==================================================
+downloaded 640 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif35.motif'
+Content type 'text/plain; charset=UTF-8' length 531 bytes
+==================================================
+downloaded 531 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif36.motif'
+Content type 'text/plain; charset=UTF-8' length 518 bytes
+==================================================
+downloaded 518 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif37.motif'
+Content type 'text/plain; charset=UTF-8' length 539 bytes
+==================================================
+downloaded 539 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif38.motif'
+Content type 'text/plain; charset=UTF-8' length 683 bytes
+==================================================
+downloaded 683 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif39.motif'
+Content type 'text/plain; charset=UTF-8' length 630 bytes
+==================================================
+downloaded 630 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif40.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif41.motif'
+Content type 'text/plain; charset=UTF-8' length 407 bytes
+==================================================
+downloaded 407 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif42.motif'
+Content type 'text/plain; charset=UTF-8' length 383 bytes
+==================================================
+downloaded 383 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif43.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif44.motif'
+Content type 'text/plain; charset=UTF-8' length 470 bytes
+==================================================
+downloaded 470 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif45.motif'
+Content type 'text/plain; charset=UTF-8' length 482 bytes
+==================================================
+downloaded 482 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif46.motif'
+Content type 'text/plain; charset=UTF-8' length 386 bytes
+==================================================
+downloaded 386 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif47.motif'
+Content type 'text/plain; charset=UTF-8' length 491 bytes
+==================================================
+downloaded 491 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif48.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif49.motif'
+Content type 'text/plain; charset=UTF-8' length 481 bytes
+==================================================
+downloaded 481 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif50.motif'
+Content type 'text/plain; charset=UTF-8' length 959 bytes
+==================================================
+downloaded 959 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif51.motif'
+Content type 'text/plain; charset=UTF-8' length 853 bytes
+==================================================
+downloaded 853 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif52.motif'
+Content type 'text/plain; charset=UTF-8' length 433 bytes
+==================================================
+downloaded 433 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif53.motif'
+Content type 'text/plain; charset=UTF-8' length 436 bytes
+==================================================
+downloaded 436 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif54.motif'
+Content type 'text/plain; charset=UTF-8' length 455 bytes
+==================================================
+downloaded 455 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif55.motif'
+Content type 'text/plain; charset=UTF-8' length 456 bytes
+==================================================
+downloaded 456 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif56.motif'
+Content type 'text/plain; charset=UTF-8' length 449 bytes
+==================================================
+downloaded 449 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif57.motif'
+Content type 'text/plain; charset=UTF-8' length 404 bytes
+==================================================
+downloaded 404 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif58.motif'
+Content type 'text/plain; charset=UTF-8' length 723 bytes
+==================================================
+downloaded 723 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif59.motif'
+Content type 'text/plain; charset=UTF-8' length 559 bytes
+==================================================
+downloaded 559 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif60.motif'
+Content type 'text/plain; charset=UTF-8' length 557 bytes
+==================================================
+downloaded 557 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif61.motif'
+Content type 'text/plain; charset=UTF-8' length 479 bytes
+==================================================
+downloaded 479 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif62.motif'
+Content type 'text/plain; charset=UTF-8' length 629 bytes
+==================================================
+downloaded 629 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif63.motif'
+Content type 'text/plain; charset=UTF-8' length 578 bytes
+==================================================
+downloaded 578 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif64.motif'
+Content type 'text/plain; charset=UTF-8' length 502 bytes
+==================================================
+downloaded 502 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif65.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif66.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif67.motif'
+Content type 'text/plain; charset=UTF-8' length 422 bytes
+==================================================
+downloaded 422 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif68.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif69.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif70.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif71.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif72.motif'
+Content type 'text/plain; charset=UTF-8' length 507 bytes
+==================================================
+downloaded 507 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif73.motif'
+Content type 'text/plain; charset=UTF-8' length 440 bytes
+==================================================
+downloaded 440 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif74.motif'
+Content type 'text/plain; charset=UTF-8' length 570 bytes
+==================================================
+downloaded 570 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif75.motif'
+Content type 'text/plain; charset=UTF-8' length 619 bytes
+==================================================
+downloaded 619 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif76.motif'
+Content type 'text/plain; charset=UTF-8' length 563 bytes
+==================================================
+downloaded 563 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif77.motif'
+Content type 'text/plain; charset=UTF-8' length 689 bytes
+==================================================
+downloaded 689 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif78.motif'
+Content type 'text/plain; charset=UTF-8' length 580 bytes
+==================================================
+downloaded 580 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif79.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif80.motif'
+Content type 'text/plain; charset=UTF-8' length 483 bytes
+==================================================
+downloaded 483 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif81.motif'
+Content type 'text/plain; charset=UTF-8' length 420 bytes
+==================================================
+downloaded 420 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif82.motif'
+Content type 'text/plain; charset=UTF-8' length 627 bytes
+==================================================
+downloaded 627 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif83.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif84.motif'
+Content type 'text/plain; charset=UTF-8' length 429 bytes
+==================================================
+downloaded 429 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif85.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif86.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif87.motif'
+Content type 'text/plain; charset=UTF-8' length 426 bytes
+==================================================
+downloaded 426 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif88.motif'
+Content type 'text/plain; charset=UTF-8' length 426 bytes
+==================================================
+downloaded 426 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif89.motif'
+Content type 'text/plain; charset=UTF-8' length 440 bytes
+==================================================
+downloaded 440 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif90.motif'
+Content type 'text/plain; charset=UTF-8' length 432 bytes
+==================================================
+downloaded 432 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif91.motif'
+Content type 'text/plain; charset=UTF-8' length 699 bytes
+==================================================
+downloaded 699 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif92.motif'
+Content type 'text/plain; charset=UTF-8' length 515 bytes
+==================================================
+downloaded 515 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif93.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif94.motif'
+Content type 'text/plain; charset=UTF-8' length 482 bytes
+==================================================
+downloaded 482 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif95.motif'
+Content type 'text/plain; charset=UTF-8' length 470 bytes
+==================================================
+downloaded 470 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif96.motif'
+Content type 'text/plain; charset=UTF-8' length 526 bytes
+==================================================
+downloaded 526 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif97.motif'
+Content type 'text/plain; charset=UTF-8' length 493 bytes
+==================================================
+downloaded 493 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif98.motif'
+Content type 'text/plain; charset=UTF-8' length 487 bytes
+==================================================
+downloaded 487 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif99.motif'
+Content type 'text/plain; charset=UTF-8' length 524 bytes
+==================================================
+downloaded 524 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif100.motif'
+Content type 'text/plain; charset=UTF-8' length 596 bytes
+==================================================
+downloaded 596 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif101.motif'
+Content type 'text/plain; charset=UTF-8' length 574 bytes
+==================================================
+downloaded 574 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif102.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif103.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif104.motif'
+Content type 'text/plain; charset=UTF-8' length 456 bytes
+==================================================
+downloaded 456 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif105.motif'
+Content type 'text/plain; charset=UTF-8' length 458 bytes
+==================================================
+downloaded 458 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif106.motif'
+Content type 'text/plain; charset=UTF-8' length 421 bytes
+==================================================
+downloaded 421 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif107.motif'
+Content type 'text/plain; charset=UTF-8' length 483 bytes
+==================================================
+downloaded 483 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif108.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif109.motif'
+Content type 'text/plain; charset=UTF-8' length 486 bytes
+==================================================
+downloaded 486 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif110.motif'
+Content type 'text/plain; charset=UTF-8' length 440 bytes
+==================================================
+downloaded 440 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif111.motif'
+Content type 'text/plain; charset=UTF-8' length 638 bytes
+==================================================
+downloaded 638 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif112.motif'
+Content type 'text/plain; charset=UTF-8' length 566 bytes
+==================================================
+downloaded 566 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif113.motif'
+Content type 'text/plain; charset=UTF-8' length 526 bytes
+==================================================
+downloaded 526 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif114.motif'
+Content type 'text/plain; charset=UTF-8' length 632 bytes
+==================================================
+downloaded 632 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif115.motif'
+Content type 'text/plain; charset=UTF-8' length 489 bytes
+==================================================
+downloaded 489 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif116.motif'
+Content type 'text/plain; charset=UTF-8' length 490 bytes
+==================================================
+downloaded 490 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif117.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif118.motif'
+Content type 'text/plain; charset=UTF-8' length 496 bytes
+==================================================
+downloaded 496 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif119.motif'
+Content type 'text/plain; charset=UTF-8' length 491 bytes
+==================================================
+downloaded 491 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif120.motif'
+Content type 'text/plain; charset=UTF-8' length 439 bytes
+==================================================
+downloaded 439 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif121.motif'
+Content type 'text/plain; charset=UTF-8' length 437 bytes
+==================================================
+downloaded 437 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif122.motif'
+Content type 'text/plain; charset=UTF-8' length 396 bytes
+==================================================
+downloaded 396 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif123.motif'
+Content type 'text/plain; charset=UTF-8' length 483 bytes
+==================================================
+downloaded 483 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif124.motif'
+Content type 'text/plain; charset=UTF-8' length 480 bytes
+==================================================
+downloaded 480 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif125.motif'
+Content type 'text/plain; charset=UTF-8' length 489 bytes
+==================================================
+downloaded 489 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif126.motif'
+Content type 'text/plain; charset=UTF-8' length 772 bytes
+==================================================
+downloaded 772 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif127.motif'
+Content type 'text/plain; charset=UTF-8' length 574 bytes
+==================================================
+downloaded 574 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif128.motif'
+Content type 'text/plain; charset=UTF-8' length 521 bytes
+==================================================
+downloaded 521 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif129.motif'
+Content type 'text/plain; charset=UTF-8' length 558 bytes
+==================================================
+downloaded 558 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif130.motif'
+Content type 'text/plain; charset=UTF-8' length 683 bytes
+==================================================
+downloaded 683 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif131.motif'
+Content type 'text/plain; charset=UTF-8' length 681 bytes
+==================================================
+downloaded 681 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif132.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif133.motif'
+Content type 'text/plain; charset=UTF-8' length 381 bytes
+==================================================
+downloaded 381 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif134.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif135.motif'
+Content type 'text/plain; charset=UTF-8' length 430 bytes
+==================================================
+downloaded 430 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif136.motif'
+Content type 'text/plain; charset=UTF-8' length 470 bytes
+==================================================
+downloaded 470 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif137.motif'
+Content type 'text/plain; charset=UTF-8' length 827 bytes
+==================================================
+downloaded 827 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif138.motif'
+Content type 'text/plain; charset=UTF-8' length 568 bytes
+==================================================
+downloaded 568 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif139.motif'
+Content type 'text/plain; charset=UTF-8' length 620 bytes
+==================================================
+downloaded 620 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif140.motif'
+Content type 'text/plain; charset=UTF-8' length 669 bytes
+==================================================
+downloaded 669 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif141.motif'
+Content type 'text/plain; charset=UTF-8' length 791 bytes
+==================================================
+downloaded 791 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif142.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif143.motif'
+Content type 'text/plain; charset=UTF-8' length 711 bytes
+==================================================
+downloaded 711 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif144.motif'
+Content type 'text/plain; charset=UTF-8' length 568 bytes
+==================================================
+downloaded 568 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif145.motif'
+Content type 'text/plain; charset=UTF-8' length 665 bytes
+==================================================
+downloaded 665 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif146.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif147.motif'
+Content type 'text/plain; charset=UTF-8' length 677 bytes
+==================================================
+downloaded 677 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif148.motif'
+Content type 'text/plain; charset=UTF-8' length 398 bytes
+==================================================
+downloaded 398 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif149.motif'
+Content type 'text/plain; charset=UTF-8' length 562 bytes
+==================================================
+downloaded 562 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif150.motif'
+Content type 'text/plain; charset=UTF-8' length 421 bytes
+==================================================
+downloaded 421 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif151.motif'
+Content type 'text/plain; charset=UTF-8' length 377 bytes
+==================================================
+downloaded 377 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif152.motif'
+Content type 'text/plain; charset=UTF-8' length 379 bytes
+==================================================
+downloaded 379 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif153.motif'
+Content type 'text/plain; charset=UTF-8' length 383 bytes
+==================================================
+downloaded 383 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif154.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif155.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif156.motif'
+Content type 'text/plain; charset=UTF-8' length 432 bytes
+==================================================
+downloaded 432 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif157.motif'
+Content type 'text/plain; charset=UTF-8' length 489 bytes
+==================================================
+downloaded 489 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif158.motif'
+Content type 'text/plain; charset=UTF-8' length 798 bytes
+==================================================
+downloaded 798 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif159.motif'
+Content type 'text/plain; charset=UTF-8' length 832 bytes
+==================================================
+downloaded 832 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif160.motif'
+Content type 'text/plain; charset=UTF-8' length 398 bytes
+==================================================
+downloaded 398 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif161.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif162.motif'
+Content type 'text/plain; charset=UTF-8' length 464 bytes
+==================================================
+downloaded 464 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif163.motif'
+Content type 'text/plain; charset=UTF-8' length 468 bytes
+==================================================
+downloaded 468 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif164.motif'
+Content type 'text/plain; charset=UTF-8' length 467 bytes
+==================================================
+downloaded 467 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif165.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif166.motif'
+Content type 'text/plain; charset=UTF-8' length 502 bytes
+==================================================
+downloaded 502 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif167.motif'
+Content type 'text/plain; charset=UTF-8' length 462 bytes
+==================================================
+downloaded 462 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif168.motif'
+Content type 'text/plain; charset=UTF-8' length 464 bytes
+==================================================
+downloaded 464 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif169.motif'
+Content type 'text/plain; charset=UTF-8' length 483 bytes
+==================================================
+downloaded 483 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif170.motif'
+Content type 'text/plain; charset=UTF-8' length 639 bytes
+==================================================
+downloaded 639 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif171.motif'
+Content type 'text/plain; charset=UTF-8' length 465 bytes
+==================================================
+downloaded 465 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif172.motif'
+Content type 'text/plain; charset=UTF-8' length 470 bytes
+==================================================
+downloaded 470 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif173.motif'
+Content type 'text/plain; charset=UTF-8' length 517 bytes
+==================================================
+downloaded 517 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif174.motif'
+Content type 'text/plain; charset=UTF-8' length 469 bytes
+==================================================
+downloaded 469 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif175.motif'
+Content type 'text/plain; charset=UTF-8' length 707 bytes
+==================================================
+downloaded 707 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif176.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif177.motif'
+Content type 'text/plain; charset=UTF-8' length 475 bytes
+==================================================
+downloaded 475 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif178.motif'
+Content type 'text/plain; charset=UTF-8' length 488 bytes
+==================================================
+downloaded 488 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif179.motif'
+Content type 'text/plain; charset=UTF-8' length 473 bytes
+==================================================
+downloaded 473 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif180.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif181.motif'
+Content type 'text/plain; charset=UTF-8' length 475 bytes
+==================================================
+downloaded 475 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif182.motif'
+Content type 'text/plain; charset=UTF-8' length 391 bytes
+==================================================
+downloaded 391 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif183.motif'
+Content type 'text/plain; charset=UTF-8' length 671 bytes
+==================================================
+downloaded 671 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif184.motif'
+Content type 'text/plain; charset=UTF-8' length 480 bytes
+==================================================
+downloaded 480 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif185.motif'
+Content type 'text/plain; charset=UTF-8' length 448 bytes
+==================================================
+downloaded 448 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif186.motif'
+Content type 'text/plain; charset=UTF-8' length 675 bytes
+==================================================
+downloaded 675 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif187.motif'
+Content type 'text/plain; charset=UTF-8' length 502 bytes
+==================================================
+downloaded 502 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif188.motif'
+Content type 'text/plain; charset=UTF-8' length 487 bytes
+==================================================
+downloaded 487 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif189.motif'
+Content type 'text/plain; charset=UTF-8' length 492 bytes
+==================================================
+downloaded 492 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif190.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif191.motif'
+Content type 'text/plain; charset=UTF-8' length 547 bytes
+==================================================
+downloaded 547 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif192.motif'
+Content type 'text/plain; charset=UTF-8' length 468 bytes
+==================================================
+downloaded 468 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif193.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif194.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif195.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif196.motif'
+Content type 'text/plain; charset=UTF-8' length 422 bytes
+==================================================
+downloaded 422 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif197.motif'
+Content type 'text/plain; charset=UTF-8' length 454 bytes
+==================================================
+downloaded 454 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif198.motif'
+Content type 'text/plain; charset=UTF-8' length 386 bytes
+==================================================
+downloaded 386 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif199.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif200.motif'
+Content type 'text/plain; charset=UTF-8' length 449 bytes
+==================================================
+downloaded 449 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif201.motif'
+Content type 'text/plain; charset=UTF-8' length 757 bytes
+==================================================
+downloaded 757 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif202.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif203.motif'
+Content type 'text/plain; charset=UTF-8' length 434 bytes
+==================================================
+downloaded 434 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif204.motif'
+Content type 'text/plain; charset=UTF-8' length 728 bytes
+==================================================
+downloaded 728 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif205.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif206.motif'
+Content type 'text/plain; charset=UTF-8' length 675 bytes
+==================================================
+downloaded 675 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif207.motif'
+Content type 'text/plain; charset=UTF-8' length 557 bytes
+==================================================
+downloaded 557 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif208.motif'
+Content type 'text/plain; charset=UTF-8' length 480 bytes
+==================================================
+downloaded 480 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif209.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif210.motif'
+Content type 'text/plain; charset=UTF-8' length 372 bytes
+==================================================
+downloaded 372 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif211.motif'
+Content type 'text/plain; charset=UTF-8' length 440 bytes
+==================================================
+downloaded 440 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif212.motif'
+Content type 'text/plain; charset=UTF-8' length 491 bytes
+==================================================
+downloaded 491 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif213.motif'
+Content type 'text/plain; charset=UTF-8' length 487 bytes
+==================================================
+downloaded 487 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif214.motif'
+Content type 'text/plain; charset=UTF-8' length 484 bytes
+==================================================
+downloaded 484 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif215.motif'
+Content type 'text/plain; charset=UTF-8' length 448 bytes
+==================================================
+downloaded 448 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif216.motif'
+Content type 'text/plain; charset=UTF-8' length 437 bytes
+==================================================
+downloaded 437 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif217.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif218.motif'
+Content type 'text/plain; charset=UTF-8' length 429 bytes
+==================================================
+downloaded 429 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif219.motif'
+Content type 'text/plain; charset=UTF-8' length 373 bytes
+==================================================
+downloaded 373 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif220.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif221.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif222.motif'
+Content type 'text/plain; charset=UTF-8' length 526 bytes
+==================================================
+downloaded 526 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif223.motif'
+Content type 'text/plain; charset=UTF-8' length 382 bytes
+==================================================
+downloaded 382 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif224.motif'
+Content type 'text/plain; charset=UTF-8' length 530 bytes
+==================================================
+downloaded 530 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif225.motif'
+Content type 'text/plain; charset=UTF-8' length 442 bytes
+==================================================
+downloaded 442 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif226.motif'
+Content type 'text/plain; charset=UTF-8' length 456 bytes
+==================================================
+downloaded 456 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif227.motif'
+Content type 'text/plain; charset=UTF-8' length 948 bytes
+==================================================
+downloaded 948 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif228.motif'
+Content type 'text/plain; charset=UTF-8' length 445 bytes
+==================================================
+downloaded 445 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif229.motif'
+Content type 'text/plain; charset=UTF-8' length 721 bytes
+==================================================
+downloaded 721 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif230.motif'
+Content type 'text/plain; charset=UTF-8' length 990 bytes
+==================================================
+downloaded 990 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif231.motif'
+Content type 'text/plain; charset=UTF-8' length 534 bytes
+==================================================
+downloaded 534 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif232.motif'
+Content type 'text/plain; charset=UTF-8' length 559 bytes
+==================================================
+downloaded 559 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif233.motif'
+Content type 'text/plain; charset=UTF-8' length 473 bytes
+==================================================
+downloaded 473 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif234.motif'
+Content type 'text/plain; charset=UTF-8' length 555 bytes
+==================================================
+downloaded 555 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif235.motif'
+Content type 'text/plain; charset=UTF-8' length 590 bytes
+==================================================
+downloaded 590 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif236.motif'
+Content type 'text/plain; charset=UTF-8' length 433 bytes
+==================================================
+downloaded 433 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif237.motif'
+Content type 'text/plain; charset=UTF-8' length 450 bytes
+==================================================
+downloaded 450 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif238.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif239.motif'
+Content type 'text/plain; charset=UTF-8' length 458 bytes
+==================================================
+downloaded 458 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif240.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif241.motif'
+Content type 'text/plain; charset=UTF-8' length 396 bytes
+==================================================
+downloaded 396 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif242.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif243.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif244.motif'
+Content type 'text/plain; charset=UTF-8' length 486 bytes
+==================================================
+downloaded 486 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif245.motif'
+Content type 'text/plain; charset=UTF-8' length 378 bytes
+==================================================
+downloaded 378 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif246.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif247.motif'
+Content type 'text/plain; charset=UTF-8' length 515 bytes
+==================================================
+downloaded 515 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif248.motif'
+Content type 'text/plain; charset=UTF-8' length 676 bytes
+==================================================
+downloaded 676 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif249.motif'
+Content type 'text/plain; charset=UTF-8' length 488 bytes
+==================================================
+downloaded 488 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif250.motif'
+Content type 'text/plain; charset=UTF-8' length 433 bytes
+==================================================
+downloaded 433 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif251.motif'
+Content type 'text/plain; charset=UTF-8' length 472 bytes
+==================================================
+downloaded 472 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif252.motif'
+Content type 'text/plain; charset=UTF-8' length 463 bytes
+==================================================
+downloaded 463 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif253.motif'
+Content type 'text/plain; charset=UTF-8' length 434 bytes
+==================================================
+downloaded 434 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif254.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif255.motif'
+Content type 'text/plain; charset=UTF-8' length 583 bytes
+==================================================
+downloaded 583 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif256.motif'
+Content type 'text/plain; charset=UTF-8' length 939 bytes
+==================================================
+downloaded 939 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif257.motif'
+Content type 'text/plain; charset=UTF-8' length 493 bytes
+==================================================
+downloaded 493 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif258.motif'
+Content type 'text/plain; charset=UTF-8' length 577 bytes
+==================================================
+downloaded 577 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif259.motif'
+Content type 'text/plain; charset=UTF-8' length 570 bytes
+==================================================
+downloaded 570 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif260.motif'
+Content type 'text/plain; charset=UTF-8' length 570 bytes
+==================================================
+downloaded 570 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif261.motif'
+Content type 'text/plain; charset=UTF-8' length 583 bytes
+==================================================
+downloaded 583 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif262.motif'
+Content type 'text/plain; charset=UTF-8' length 439 bytes
+==================================================
+downloaded 439 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif263.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif264.motif'
+Content type 'text/plain; charset=UTF-8' length 602 bytes
+==================================================
+downloaded 602 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif265.motif'
+Content type 'text/plain; charset=UTF-8' length 671 bytes
+==================================================
+downloaded 671 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif266.motif'
+Content type 'text/plain; charset=UTF-8' length 663 bytes
+==================================================
+downloaded 663 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif267.motif'
+Content type 'text/plain; charset=UTF-8' length 1165 bytes
+==================================================
+downloaded 1165 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif268.motif'
+Content type 'text/plain; charset=UTF-8' length 775 bytes
+==================================================
+downloaded 775 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif269.motif'
+Content type 'text/plain; charset=UTF-8' length 681 bytes
+==================================================
+downloaded 681 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif270.motif'
+Content type 'text/plain; charset=UTF-8' length 840 bytes
+==================================================
+downloaded 840 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif271.motif'
+Content type 'text/plain; charset=UTF-8' length 798 bytes
+==================================================
+downloaded 798 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif272.motif'
+Content type 'text/plain; charset=UTF-8' length 663 bytes
+==================================================
+downloaded 663 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif273.motif'
+Content type 'text/plain; charset=UTF-8' length 707 bytes
+==================================================
+downloaded 707 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif274.motif'
+Content type 'text/plain; charset=UTF-8' length 722 bytes
+==================================================
+downloaded 722 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif275.motif'
+Content type 'text/plain; charset=UTF-8' length 515 bytes
+==================================================
+downloaded 515 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif276.motif'
+Content type 'text/plain; charset=UTF-8' length 460 bytes
+==================================================
+downloaded 460 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif277.motif'
+Content type 'text/plain; charset=UTF-8' length 577 bytes
+==================================================
+downloaded 577 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif278.motif'
+Content type 'text/plain; charset=UTF-8' length 480 bytes
+==================================================
+downloaded 480 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif279.motif'
+Content type 'text/plain; charset=UTF-8' length 482 bytes
+==================================================
+downloaded 482 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif280.motif'
+Content type 'text/plain; charset=UTF-8' length 532 bytes
+==================================================
+downloaded 532 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif281.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif282.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif283.motif'
+Content type 'text/plain; charset=UTF-8' length 495 bytes
+==================================================
+downloaded 495 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif284.motif'
+Content type 'text/plain; charset=UTF-8' length 497 bytes
+==================================================
+downloaded 497 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif285.motif'
+Content type 'text/plain; charset=UTF-8' length 496 bytes
+==================================================
+downloaded 496 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif286.motif'
+Content type 'text/plain; charset=UTF-8' length 440 bytes
+==================================================
+downloaded 440 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif287.motif'
+Content type 'text/plain; charset=UTF-8' length 664 bytes
+==================================================
+downloaded 664 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif288.motif'
+Content type 'text/plain; charset=UTF-8' length 400 bytes
+==================================================
+downloaded 400 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif289.motif'
+Content type 'text/plain; charset=UTF-8' length 487 bytes
+==================================================
+downloaded 487 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif290.motif'
+Content type 'text/plain; charset=UTF-8' length 562 bytes
+==================================================
+downloaded 562 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif291.motif'
+Content type 'text/plain; charset=UTF-8' length 574 bytes
+==================================================
+downloaded 574 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif292.motif'
+Content type 'text/plain; charset=UTF-8' length 490 bytes
+==================================================
+downloaded 490 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif293.motif'
+Content type 'text/plain; charset=UTF-8' length 617 bytes
+==================================================
+downloaded 617 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif294.motif'
+Content type 'text/plain; charset=UTF-8' length 555 bytes
+==================================================
+downloaded 555 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif295.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif296.motif'
+Content type 'text/plain; charset=UTF-8' length 555 bytes
+==================================================
+downloaded 555 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif297.motif'
+Content type 'text/plain; charset=UTF-8' length 543 bytes
+==================================================
+downloaded 543 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif298.motif'
+Content type 'text/plain; charset=UTF-8' length 506 bytes
+==================================================
+downloaded 506 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif299.motif'
+Content type 'text/plain; charset=UTF-8' length 647 bytes
+==================================================
+downloaded 647 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif300.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif301.motif'
+Content type 'text/plain; charset=UTF-8' length 492 bytes
+==================================================
+downloaded 492 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif302.motif'
+Content type 'text/plain; charset=UTF-8' length 637 bytes
+==================================================
+downloaded 637 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif303.motif'
+Content type 'text/plain; charset=UTF-8' length 526 bytes
+==================================================
+downloaded 526 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif304.motif'
+Content type 'text/plain; charset=UTF-8' length 422 bytes
+==================================================
+downloaded 422 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif305.motif'
+Content type 'text/plain; charset=UTF-8' length 464 bytes
+==================================================
+downloaded 464 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif306.motif'
+Content type 'text/plain; charset=UTF-8' length 618 bytes
+==================================================
+downloaded 618 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif307.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif308.motif'
+Content type 'text/plain; charset=UTF-8' length 855 bytes
+==================================================
+downloaded 855 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif309.motif'
+Content type 'text/plain; charset=UTF-8' length 1038 bytes
+==================================================
+downloaded 1038 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif310.motif'
+Content type 'text/plain; charset=UTF-8' length 669 bytes
+==================================================
+downloaded 669 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif311.motif'
+Content type 'text/plain; charset=UTF-8' length 550 bytes
+==================================================
+downloaded 550 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif312.motif'
+Content type 'text/plain; charset=UTF-8' length 765 bytes
+==================================================
+downloaded 765 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif313.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif314.motif'
+Content type 'text/plain; charset=UTF-8' length 561 bytes
+==================================================
+downloaded 561 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif315.motif'
+Content type 'text/plain; charset=UTF-8' length 677 bytes
+==================================================
+downloaded 677 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif316.motif'
+Content type 'text/plain; charset=UTF-8' length 548 bytes
+==================================================
+downloaded 548 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif317.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif318.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif319.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif320.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif321.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif322.motif'
+Content type 'text/plain; charset=UTF-8' length 536 bytes
+==================================================
+downloaded 536 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif323.motif'
+Content type 'text/plain; charset=UTF-8' length 665 bytes
+==================================================
+downloaded 665 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif324.motif'
+Content type 'text/plain; charset=UTF-8' length 369 bytes
+==================================================
+downloaded 369 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif325.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif326.motif'
+Content type 'text/plain; charset=UTF-8' length 423 bytes
+==================================================
+downloaded 423 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif327.motif'
+Content type 'text/plain; charset=UTF-8' length 492 bytes
+==================================================
+downloaded 492 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif328.motif'
+Content type 'text/plain; charset=UTF-8' length 512 bytes
+==================================================
+downloaded 512 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif329.motif'
+Content type 'text/plain; charset=UTF-8' length 553 bytes
+==================================================
+downloaded 553 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif330.motif'
+Content type 'text/plain; charset=UTF-8' length 375 bytes
+==================================================
+downloaded 375 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif331.motif'
+Content type 'text/plain; charset=UTF-8' length 378 bytes
+==================================================
+downloaded 378 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif332.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif333.motif'
+Content type 'text/plain; charset=UTF-8' length 442 bytes
+==================================================
+downloaded 442 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif334.motif'
+Content type 'text/plain; charset=UTF-8' length 483 bytes
+==================================================
+downloaded 483 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif335.motif'
+Content type 'text/plain; charset=UTF-8' length 442 bytes
+==================================================
+downloaded 442 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif336.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif337.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif338.motif'
+Content type 'text/plain; charset=UTF-8' length 418 bytes
+==================================================
+downloaded 418 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif339.motif'
+Content type 'text/plain; charset=UTF-8' length 376 bytes
+==================================================
+downloaded 376 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif340.motif'
+Content type 'text/plain; charset=UTF-8' length 425 bytes
+==================================================
+downloaded 425 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif341.motif'
+Content type 'text/plain; charset=UTF-8' length 434 bytes
+==================================================
+downloaded 434 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif342.motif'
+Content type 'text/plain; charset=UTF-8' length 473 bytes
+==================================================
+downloaded 473 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif343.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif344.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif345.motif'
+Content type 'text/plain; charset=UTF-8' length 482 bytes
+==================================================
+downloaded 482 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif346.motif'
+Content type 'text/plain; charset=UTF-8' length 479 bytes
+==================================================
+downloaded 479 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif347.motif'
+Content type 'text/plain; charset=UTF-8' length 475 bytes
+==================================================
+downloaded 475 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif348.motif'
+Content type 'text/plain; charset=UTF-8' length 479 bytes
+==================================================
+downloaded 479 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif349.motif'
+Content type 'text/plain; charset=UTF-8' length 534 bytes
+==================================================
+downloaded 534 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif350.motif'
+Content type 'text/plain; charset=UTF-8' length 527 bytes
+==================================================
+downloaded 527 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif351.motif'
+Content type 'text/plain; charset=UTF-8' length 677 bytes
+==================================================
+downloaded 677 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif352.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif353.motif'
+Content type 'text/plain; charset=UTF-8' length 677 bytes
+==================================================
+downloaded 677 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif354.motif'
+Content type 'text/plain; charset=UTF-8' length 676 bytes
+==================================================
+downloaded 676 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif355.motif'
+Content type 'text/plain; charset=UTF-8' length 662 bytes
+==================================================
+downloaded 662 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif356.motif'
+Content type 'text/plain; charset=UTF-8' length 523 bytes
+==================================================
+downloaded 523 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif357.motif'
+Content type 'text/plain; charset=UTF-8' length 479 bytes
+==================================================
+downloaded 479 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif358.motif'
+Content type 'text/plain; charset=UTF-8' length 443 bytes
+==================================================
+downloaded 443 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif359.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif360.motif'
+Content type 'text/plain; charset=UTF-8' length 515 bytes
+==================================================
+downloaded 515 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif361.motif'
+Content type 'text/plain; charset=UTF-8' length 534 bytes
+==================================================
+downloaded 534 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif362.motif'
+Content type 'text/plain; charset=UTF-8' length 426 bytes
+==================================================
+downloaded 426 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif363.motif'
+Content type 'text/plain; charset=UTF-8' length 502 bytes
+==================================================
+downloaded 502 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif364.motif'
+Content type 'text/plain; charset=UTF-8' length 432 bytes
+==================================================
+downloaded 432 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif365.motif'
+Content type 'text/plain; charset=UTF-8' length 484 bytes
+==================================================
+downloaded 484 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif366.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif367.motif'
+Content type 'text/plain; charset=UTF-8' length 395 bytes
+==================================================
+downloaded 395 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif368.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif369.motif'
+Content type 'text/plain; charset=UTF-8' length 531 bytes
+==================================================
+downloaded 531 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif370.motif'
+Content type 'text/plain; charset=UTF-8' length 459 bytes
+==================================================
+downloaded 459 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif371.motif'
+Content type 'text/plain; charset=UTF-8' length 467 bytes
+==================================================
+downloaded 467 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif372.motif'
+Content type 'text/plain; charset=UTF-8' length 432 bytes
+==================================================
+downloaded 432 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif373.motif'
+Content type 'text/plain; charset=UTF-8' length 426 bytes
+==================================================
+downloaded 426 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif374.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif375.motif'
+Content type 'text/plain; charset=UTF-8' length 930 bytes
+==================================================
+downloaded 930 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif376.motif'
+Content type 'text/plain; charset=UTF-8' length 430 bytes
+==================================================
+downloaded 430 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif377.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif378.motif'
+Content type 'text/plain; charset=UTF-8' length 428 bytes
+==================================================
+downloaded 428 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif379.motif'
+Content type 'text/plain; charset=UTF-8' length 439 bytes
+==================================================
+downloaded 439 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif380.motif'
+Content type 'text/plain; charset=UTF-8' length 438 bytes
+==================================================
+downloaded 438 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif381.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif382.motif'
+Content type 'text/plain; charset=UTF-8' length 390 bytes
+==================================================
+downloaded 390 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif383.motif'
+Content type 'text/plain; charset=UTF-8' length 390 bytes
+==================================================
+downloaded 390 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif384.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif385.motif'
+Content type 'text/plain; charset=UTF-8' length 766 bytes
+==================================================
+downloaded 766 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif386.motif'
+Content type 'text/plain; charset=UTF-8' length 763 bytes
+==================================================
+downloaded 763 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif387.motif'
+Content type 'text/plain; charset=UTF-8' length 551 bytes
+==================================================
+downloaded 551 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif388.motif'
+Content type 'text/plain; charset=UTF-8' length 381 bytes
+==================================================
+downloaded 381 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif389.motif'
+Content type 'text/plain; charset=UTF-8' length 433 bytes
+==================================================
+downloaded 433 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif390.motif'
+Content type 'text/plain; charset=UTF-8' length 689 bytes
+==================================================
+downloaded 689 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif391.motif'
+Content type 'text/plain; charset=UTF-8' length 458 bytes
+==================================================
+downloaded 458 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif392.motif'
+Content type 'text/plain; charset=UTF-8' length 429 bytes
+==================================================
+downloaded 429 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif393.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif394.motif'
+Content type 'text/plain; charset=UTF-8' length 824 bytes
+==================================================
+downloaded 824 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif395.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif396.motif'
+Content type 'text/plain; charset=UTF-8' length 721 bytes
+==================================================
+downloaded 721 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif397.motif'
+Content type 'text/plain; charset=UTF-8' length 475 bytes
+==================================================
+downloaded 475 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif398.motif'
+Content type 'text/plain; charset=UTF-8' length 435 bytes
+==================================================
+downloaded 435 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif399.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif400.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif401.motif'
+Content type 'text/plain; charset=UTF-8' length 545 bytes
+==================================================
+downloaded 545 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif402.motif'
+Content type 'text/plain; charset=UTF-8' length 424 bytes
+==================================================
+downloaded 424 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif403.motif'
+Content type 'text/plain; charset=UTF-8' length 476 bytes
+==================================================
+downloaded 476 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif404.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif405.motif'
+Content type 'text/plain; charset=UTF-8' length 806 bytes
+==================================================
+downloaded 806 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif406.motif'
+Content type 'text/plain; charset=UTF-8' length 432 bytes
+==================================================
+downloaded 432 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif407.motif'
+Content type 'text/plain; charset=UTF-8' length 552 bytes
+==================================================
+downloaded 552 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif408.motif'
+Content type 'text/plain; charset=UTF-8' length 366 bytes
+==================================================
+downloaded 366 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif409.motif'
+Content type 'text/plain; charset=UTF-8' length 474 bytes
+==================================================
+downloaded 474 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif410.motif'
+Content type 'text/plain; charset=UTF-8' length 547 bytes
+==================================================
+downloaded 547 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif411.motif'
+Content type 'text/plain; charset=UTF-8' length 437 bytes
+==================================================
+downloaded 437 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif412.motif'
+Content type 'text/plain; charset=UTF-8' length 557 bytes
+==================================================
+downloaded 557 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif413.motif'
+Content type 'text/plain; charset=UTF-8' length 816 bytes
+==================================================
+downloaded 816 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif414.motif'
+Content type 'text/plain; charset=UTF-8' length 557 bytes
+==================================================
+downloaded 557 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif415.motif'
+Content type 'text/plain; charset=UTF-8' length 810 bytes
+==================================================
+downloaded 810 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif416.motif'
+Content type 'text/plain; charset=UTF-8' length 444 bytes
+==================================================
+downloaded 444 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif417.motif'
+Content type 'text/plain; charset=UTF-8' length 477 bytes
+==================================================
+downloaded 477 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif418.motif'
+Content type 'text/plain; charset=UTF-8' length 493 bytes
+==================================================
+downloaded 493 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif419.motif'
+Content type 'text/plain; charset=UTF-8' length 566 bytes
+==================================================
+downloaded 566 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif420.motif'
+Content type 'text/plain; charset=UTF-8' length 694 bytes
+==================================================
+downloaded 694 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif421.motif'
+Content type 'text/plain; charset=UTF-8' length 431 bytes
+==================================================
+downloaded 431 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif422.motif'
+Content type 'text/plain; charset=UTF-8' length 691 bytes
+==================================================
+downloaded 691 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif423.motif'
+Content type 'text/plain; charset=UTF-8' length 491 bytes
+==================================================
+downloaded 491 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif424.motif'
+Content type 'text/plain; charset=UTF-8' length 442 bytes
+==================================================
+downloaded 442 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif425.motif'
+Content type 'text/plain; charset=UTF-8' length 811 bytes
+==================================================
+downloaded 811 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif426.motif'
+Content type 'text/plain; charset=UTF-8' length 497 bytes
+==================================================
+downloaded 497 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif427.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif428.motif'
+Content type 'text/plain; charset=UTF-8' length 566 bytes
+==================================================
+downloaded 566 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif429.motif'
+Content type 'text/plain; charset=UTF-8' length 556 bytes
+==================================================
+downloaded 556 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif430.motif'
+Content type 'text/plain; charset=UTF-8' length 565 bytes
+==================================================
+downloaded 565 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif431.motif'
+Content type 'text/plain; charset=UTF-8' length 567 bytes
+==================================================
+downloaded 567 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif432.motif'
+Content type 'text/plain; charset=UTF-8' length 441 bytes
+==================================================
+downloaded 441 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif433.motif'
+Content type 'text/plain; charset=UTF-8' length 427 bytes
+==================================================
+downloaded 427 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif434.motif'
+Content type 'text/plain; charset=UTF-8' length 478 bytes
+==================================================
+downloaded 478 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif435.motif'
+Content type 'text/plain; charset=UTF-8' length 554 bytes
+==================================================
+downloaded 554 bytes
+
+trying URL 'http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults/motif436.motif'
+Content type 'text/plain; charset=UTF-8' length 696 bytes
+==================================================
+downloaded 696 bytes
+
+Building motif matrix
+Finding motif positions
+Creating Motif object
+Warning in CreateMotifObject(data = motif.matrix, positions = motif.positions,  :
+  Non-unique motif names supplied, making unique
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Computing GC bias per region
+Selecting background regions
+Computing deviations from background
+Constructing chromVAR assay
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have pipe characters ('|'), replacing with dashes ('-')
+Warning: Layer counts isn't present in the assay object; returning NULL

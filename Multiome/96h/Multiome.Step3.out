@@ -1,0 +1,66 @@
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+0_BADC   0_wt 1_BADC   1_wt 2_BADC   2_wt 3_BADC   3_wt 
+   105   2657    881   1512   1016     88     66    927 
+
+  0_wt 1_BADC   1_wt 2_BADC 
+   500    476    476    500 
+[1] 7252
+pdf 
+  2 
+[[1]]
+BEDFile object
+resource: scriptsForRekaikEtAl2025/outputs/Multiome//0_wt_for_Homer.bed 
+
+[[2]]
+BEDFile object
+resource: scriptsForRekaikEtAl2025/outputs/Multiome//1_BADC_for_Homer.bed 
+
+[[3]]
+BEDFile object
+resource: scriptsForRekaikEtAl2025/outputs/Multiome//1_wt_for_Homer.bed 
+
+[[4]]
+BEDFile object
+resource: scriptsForRekaikEtAl2025/outputs/Multiome//2_BADC_for_Homer.bed 
+
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+           g1-wt     g0-wt    g1-BADC   g2-BADC
+Hoxa2  0.1928844 0.2722148 0.00000000 0.0000000
+Hoxa3  0.3709587 0.2687144 0.00000000 0.0000000
+Hoxb1  1.0794460 1.1391215 0.00000000 0.0000000
+Pbx1   0.4955370 0.6336489 0.52711216 0.7003335
+Pbx2   0.4093605 0.4332392 0.35931541 0.4797903
+Meis1  0.1060584 0.3674670 0.04760957 0.2577488
+Meis2  0.6839891 1.4177379 0.65989436 1.3215583
+Nkx1-2 0.7545939 0.2094876 0.80291181 0.2002145
+Cdx2   0.9138580 0.3869717 0.97200900 0.4199174
+Cdx1   1.1371823 1.0081425 1.54013287 1.4155378
+Wnt3a  0.8191523 0.2495976 0.84218169 0.2754353
+Fgf3   0.3058088 0.3332129 0.51747115 0.3289100
+Fgf4   0.5828228 0.1952489 0.68478686 0.1824166
+Etv4   0.8295182 0.3962746 0.94458004 0.3733314

@@ -1,0 +1,5 @@
+sample	Line	Tissue	Replicate	htseq_count_file	cufflinks_file
+mES_wt_rep1	wt	ES_cells	1	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_wt_rep1_HTseqCount.txt	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_wt_rep1_Cufflinks_gene_expression.txt
+mES_wt_rep2	wt	ES_cells	2	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_wt_rep2_HTseqCount.txt	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_wt_rep2_Cufflinks_gene_expression.txt
+mES_BADC_rep1	BADC	ES_cells	1	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_BADC_NT_rep1_HTseqCount.txt	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_BADC_NT_rep1_Cufflinks_gene_expression.txt
+mES_BADC_rep2	BADC	ES_cells	2	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_BADC_NT_rep2_HTseqCount.txt	/home/ldelisle/mountDuboule/Hocine/Papier/HoxLess/RNAseq/RNAseq_EScells/ES_BADC_NT_rep2_Cufflinks_gene_expression.txt

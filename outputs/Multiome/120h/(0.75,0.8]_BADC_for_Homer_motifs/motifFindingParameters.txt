@@ -1,0 +1,1 @@
+cmd = (0.75,0.8]_BADC_for_Homer.bed /Users/hocine.rekaik/Desktop/EXP/Gastruloids/scMultiome/21012025/data/mm10_UCSC.fa (0.75,0.8]_BADC_for_Homer_motifs -size given -len 8,10,12
