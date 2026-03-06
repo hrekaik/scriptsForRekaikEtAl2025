@@ -5,6 +5,7 @@ All scripts necessary to build figures from raw data in Rekaik et al. 2025.
 Here is description of each directory:
 
 - [annotations](./annotations/) contains 2 bed files, one with the coordinates of the deletion and one with the Hox genes coordinates from 1 (or 4) to 13.
+- [Sangerseq](./Sangerseq/) contains the table and script to generate Sanger sequencing figures of mutant mES cells.
 - [ATACseq](./ATACseq/) contains all information about the processing of ATAC-seq datasets as well as how to generate the figure.
 - [general](./general/) contains a script that has been used to generate the list of genes affected by the deletion and the genes in chrY.
 - [Multiome](./Multiome/) contains all information about the processing of Multiome datasets from fastqs to figures.
